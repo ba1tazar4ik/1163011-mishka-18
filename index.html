@@ -9,30 +9,30 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo" >
+    <a class="page-header__logo-link">
       <img   class="page-header__logo-image" src="https://via.placeholder.com/86x35.png?text=MISHKA" width="86" height="35" alt="MISHKA">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav page-header__main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Вязание на заказ</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--search">
             <!-- Иконки потом вставлю просто svg кодом -->
             <img src="https://via.placeholder.com/18x18.svg " width="18" height="18" alt="иконка поиска">
-            <a href="#">Поиск по сайту</a>
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="user-list__item">
+          <li class="main-nav__item main-nav__item--cart">
             <!-- Иконки потом вставлю просто svg кодом -->
             <img src="https://via.placeholder.com/21x18.svg " width="21" height="18" alt="иконка корзины">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
@@ -41,8 +41,7 @@
 
   <main class="page-main">
     <section class="baner">
-      <h1 class="baner__tittle">Милые штуки ручной работы для дома</h1>
-      <img class="baner__image" src="https://via.placeholder.com/575x373.jpg" width="575" height="373" alt="фото домика с игрушками">
+      <h1 class="main-title baner__title">Милые штуки ручной работы для дома</h1>
     </section>
     <nav class="page-nav">
       <h2 class="visually-hidden">Выбор вида товаров</h2>
@@ -58,35 +57,35 @@
     <section class="featured-products">
       <!-- Во множественном числе на случай если товаров будет несколько и например будет слайдер с товарами (я бы так и сделал) или просто несколько штук в блоке -->
       <h2 class="visually-hidden">Популярные товары</h2>
-      <article class="featured-product-card product-card">
-        <header class="featured-product-card__header product-card__header">
-          <h2 class="featured-product-tittle">Вязаные корзинки</h2>
-          <span class="featured-product-mark">Товар недели</span>
+      <div class="featured-products__item product-card">
+        <header class="product-card__header">
+          <h2 class="product-card__title main-subtitle">Вязаные корзинки</h2>
+          <span class="product-card__mark">Товар недели</span>
         </header>
-        <div class="featured-product-card__content product-card__content">
-          <p class="featured-product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="featured-product-card__property">
+        <div class="product-card__content">
+          <p class="product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="product-card__property main-table">
             <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
+              <td class="main-table__field">Цвет:</td>
+              <td  class="main-table__value">«Тиффани»/серый</td>
             </tr>
             <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
+              <td  class="main-table__field">Диаметр:</td>
+              <td  class="main-table__value">25 см</td>
             </tr>
             <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
+              <td  class="main-table__field">Высота:</td>
+              <td  class="main-table__value">15 см</td>
             </tr>
           </table>
-          <img src="https://via.placeholder.com/260x315.jpg" width="260" height="315" alt="фото вязаных корзиночек" class="featured-product-card__image">
-          <p class="featured-product-card__cost product-card__cost">Цена: 990 руб.</p>
-          <button class="button" type="button">Заказать</button>
+          <img class="product-card__image" src="https://via.placeholder.com/260x315.jpg" width="260" height="315" alt="фото вязаных корзиночек">
+          <p class="product-card__cost">Цена: 990 руб.</p>
+          <button class="button product-card__button" type="button">Заказать</button>
         </div>
-      </article>
+      </div>
     </section>
     <section class="advantages">
-      <h2 class="advantages__tittle">Коротко о нас:</h2>
+      <h2 class="advantages__title main-subtitle">Коротко о нас:</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
           <!-- Иконку потом вставлю просто svg кодом -->
@@ -121,76 +120,71 @@
       </ul>
     </section>
     <section class="reviews">
-      <h2 class="reviews__tittle">Отзывы</h2>
-      <article class="review-block">
-          <h2 class="reviews__tittle">Отзыв клиента</h2>
-        <p class="review-block__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <span class="review__name">Анастасия Красильникова</span>
-        <span class="review__nickname">@misssssiskras</span>
-        <nav class="review__nav">
-          <button class="arrow-left"><span class="visually-hidden">Предыдущий отзыв</span></button>
-          <button class="arrow-right"><span class="visually-hidden">Следующий отзыв</span></button>
-        </nav>
-        <button class="button" type="button">Написать</button>
-      </article>
+      <h2 class="reviews__title main-subtitle">Отзывы</h2>
+      <ul class="review-block slider">
+        <li class="slider__item review-block__item">
+          <p class="review-block__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <span class="review-block__name">Анастасия Красильникова</span>
+          <span class="review-block__nickname">@misssssiskras</span>
+        </li>
+        <div class="slider__nav">
+          <button class="slider__arrow slider__arrow--left"><span class="visually-hidden">Предыдущий отзыв</span></button>
+          <button class="slider__arrow slider__arrow--right"><span class="visually-hidden">Следующий отзыв</span></button>
+        </div>
+        <a class="button review-block__button" href="#">Написать</a>
+      </ul>
     </section>
     <section class="contacts">
-      <h2>Контакты</h2>
-      <table class="contacts__text">
+      <h2 class="contacts__subtitle main-subtitle">Контакты</h2>
+      <table class="contacts__text main-table">
         <tr>
-          <td>e-mail:</td>
-          <td>info@mimimishkashop.ru</td>
+          <td class="main-table__field">e-mail:</td>
+          <td main-table__value><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
         </tr>
         <tr>
-          <td>адрес:</td>
-          <td>г. Санкт-Петербург, ул. Большая Конюшенная,  д. 19/8, офис 101</td>
+          <td class="main-table__field">адрес:</td>
+          <td main-table__value>г. Санкт-Петербург, ул. Большая Конюшенная,  д. 19/8, офис 101</td>
         </tr>
       </table>
       <img class="contacts__map" src="https://via.placeholder.com/322x457.png" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная,  д. 19/8, офис 101">
-      <button class="button" type="button">Напишите нам</button>
+      <a class="button contacts__button" href="#" >Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
-    <section class="social-links">
-      <h2 class="visually-hidden"> Ссылки на наши социальные сети</h2>
-      <ul class="social-links__list">
-        <li class="social-links__item">
-          <a href="#">
-            <span class="visually-hidden">ссылка на Instagram</span>
-            <img class="social-links__image" src="https://via.placeholder.com/22x21.svg" width="22"  height="21" alt="иконка Instagram">
-          </a>
-        </li>
-        <li class="social-links__item">
-          <a href="#">
-            <span class="visually-hidden">ссылка на Facebook</span>
-            <img class="social-links__image" src="https://via.placeholder.com/15x28.svg" width="15" height="28" alt="иконка Facebook">
-          </a>
-        </li>
-        <li class="social-links__item">
-          <a href="#">
-            <span class="visually-hidden">ссылка на Twitter</span>
-            <img class="social-links__image" src="https://via.placeholder.com/23x20.svg" width="23" height="20" alt="иконка Twitter">
-          </a>
-        </li>
-      </ul>
-    </section>
-    <a class="copyright" href="#">Разработано <img src="https://via.placeholder.com/27x34.svg" alt="Логотип HTML academy"></a>
+    <ul class="social-links__list">
+      <li class="social-links__item">
+        <a class="social-links__link social-links__link--instagram" href="#">
+          <span class="visually-hidden">ссылка на Instagram</span>
+          <img class="social-links__image" src="https://via.placeholder.com/22x21.svg" width="22"  height="21" alt="иконка Instagram">
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a class="social-links__link social-links__link--facebook" href="#">
+          <span class="visually-hidden">ссылка на Facebook</span>
+          <img class="social-links__image" src="https://via.placeholder.com/15x28.svg" width="15" height="28" alt="иконка Facebook">
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a class="social-links__link social-links__link--twitter" href="#">
+          <span class="visually-hidden">ссылка на Twitter</span>
+          <img class="social-links__image" src="https://via.placeholder.com/23x20.svg" width="23" height="20" alt="иконка Twitter">
+        </a>
+      </li>
+    </ul>
+    <a class="page-footer__copyright" href="#">Разработано <img class="page-footer__logo-image" src="https://via.placeholder.com/27x34.svg" alt="Логотип HTML academy"></a>
   </footer>
-  <div class="modal">
-    <form class="size-select" action="https://echo.htmlacademy.ru" method="post" name="select-form">
-      <fieldset>
-        <legend class="visually-hidden"> Окно выбора размера</legend>
-        <span class="size-select__text">Добавить в корзину</span>
-        <span class="size-select__mark">Выберите размер:</span>
-        <label class="size-select__label" for="size-S">S</label>
-        <input class="size-select__input visually-hidden" type="radio" id="size-S" name="size" value="S" checked>
-        <label class="size-select__label" for="size-M">M</label>
-        <input class="size-select__input visually-hidden" type="radio" id="size-M" name="size" value="M">
-        <label class="size-select__label" for="size-L">L</label>
-        <input class="size-select__input visually-hidden" type="radio" id="size-L" name="size" value="L">
-      </fieldset>
-      <button class="button button-aquamarine"></button>
+  <section class="modal">
+    <form class="size-select modal__form" action="https://echo.htmlacademy.ru" method="post" name="select-form">
+      <h2 class="size-select__title main-subtitle">Добавить в корзину</h2>
+      <p class="size-select__mark">Выберите размер:</p>
+      <label class="size-select__label" for="size-S">S</label>
+      <input class="size-select__input visually-hidden" type="radio" id="size-S" name="size" value="S" checked>
+      <label class="size-select__label" for="size-M">M</label>
+      <input class="size-select__input visually-hidden" type="radio" id="size-M" name="size" value="M">
+      <label class="size-select__label" for="size-L">L</label>
+      <input class="size-select__input visually-hidden" type="radio" id="size-L" name="size" value="L">
+      <button class="button modal__button button--aquamarine">Добавить</button>
     </form>
-  </div>
+  </section>
 </body>
 </html>
