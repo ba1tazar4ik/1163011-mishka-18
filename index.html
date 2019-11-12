@@ -40,9 +40,7 @@
   </header>
 
   <main class="page-main">
-    <section class="baner">
-      <h1 class="main-title baner__title">Милые штуки ручной работы для дома</h1>
-    </section>
+    <h1 class="main-title baner-title">Милые штуки ручной работы для дома</h1>
     <nav class="page-nav">
       <h2 class="visually-hidden">Выбор вида товаров</h2>
       <ul class="page-nav__list">
@@ -58,24 +56,22 @@
       <!-- Во множественном числе на случай если товаров будет несколько и например будет слайдер с товарами (я бы так и сделал) или просто несколько штук в блоке -->
       <h2 class="visually-hidden">Популярные товары</h2>
       <div class="featured-products__item product-card">
-        <header class="product-card__header">
-          <h2 class="product-card__title main-subtitle">Вязаные корзинки</h2>
-          <span class="product-card__mark">Товар недели</span>
-        </header>
+        <h3 class="product-card__title main-subtitle">Вязаные корзинки</h3>
+        <span class="product-card__mark">Товар недели</span>
         <div class="product-card__content">
-          <p class="product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <p class="product-card__description product-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="product-card__property main-table">
             <tr>
-              <td class="main-table__field">Цвет:</td>
-              <td  class="main-table__value">«Тиффани»/серый</td>
+              <td class="main-table__field product-card__text">Цвет:</td>
+              <td  class="main-table__value product-card__text">«Тиффани»/серый</td>
             </tr>
             <tr>
-              <td  class="main-table__field">Диаметр:</td>
-              <td  class="main-table__value">25 см</td>
+              <td  class="main-table__field product-card__text">Диаметр:</td>
+              <td  class="main-table__value product-card__text">25 см</td>
             </tr>
             <tr>
-              <td  class="main-table__field">Высота:</td>
-              <td  class="main-table__value">15 см</td>
+              <td  class="main-table__field product-card__text">Высота:</td>
+              <td  class="main-table__value product-card__text">15 см</td>
             </tr>
           </table>
           <img class="product-card__image" src="https://via.placeholder.com/260x315.jpg" width="260" height="315" alt="фото вязаных корзиночек">
@@ -138,18 +134,19 @@
       <h2 class="contacts__subtitle main-subtitle">Контакты</h2>
       <table class="contacts__text main-table">
         <tr>
-          <td class="main-table__field">e-mail:</td>
-          <td main-table__value><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+          <td class="main-table__field product-card__text">e-mail:</td>
+          <td class="main-table__value product-card__text"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
         </tr>
         <tr>
-          <td class="main-table__field">адрес:</td>
-          <td main-table__value>г. Санкт-Петербург, ул. Большая Конюшенная,  д. 19/8, офис 101</td>
+          <td class="main-table__field product-card__text">адрес:</td>
+          <td class="main-table__value product-card__text">г. Санкт-Петербург, ул. Большая Конюшенная,  д. 19/8, офис 101</td>
         </tr>
       </table>
       <img class="contacts__map" src="https://via.placeholder.com/322x457.png" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная,  д. 19/8, офис 101">
       <a class="button contacts__button" href="#" >Напишите нам</a>
     </section>
   </main>
+
   <footer class="page-footer">
     <ul class="social-links__list">
       <li class="social-links__item">
@@ -171,7 +168,7 @@
         </a>
       </li>
     </ul>
-    <a class="page-footer__copyright" href="#">Разработано <img class="page-footer__logo-image" src="https://via.placeholder.com/27x34.svg" alt="Логотип HTML academy"></a>
+    <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разработано <img class="page-footer__logo-image" src="https://via.placeholder.com/27x34.svg" alt="Логотип HTML academy"></a>
   </footer>
   <section class="modal">
     <form class="size-select modal__form" action="https://echo.htmlacademy.ru" method="post" name="select-form">
