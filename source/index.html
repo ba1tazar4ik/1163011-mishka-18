@@ -14,8 +14,9 @@
       <img   class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="MISHKA">
     </a>
     <nav class="main-nav page-header__main-nav">
+<!--      модификатор &mobile если скрипты загрузились то в мобильной версии включает кнопку меню, которая по умолчанию скрыта. соотвественно модификаторы close / ;open меняют бекграунд кнопки,ее размер и отступы-->
         <button class="main-nav__toggle main-nav__toggle--no-js main-nav__toggle--close main-nav__toggle--open"  type="button"><span class="visually-hidden">Открыть меню<</span></button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper main-nav__wrapper--mobile">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>

@@ -1,8 +1,5 @@
-.main-nav {
-  display: flex;
-}
-
 .main-nav__toggle {
+  display: none;
   position: absolute;
   border: none;
   background-color: transparent;
@@ -10,8 +7,8 @@
   background-size: cover;
 }
 
-.main-nav__toggle--no-js {
-  display: none;
+.main-nav__toggle--mobile {
+  display: block;
 }
 
 .main-nav__toggle--open {
@@ -28,4 +25,20 @@
   width: 21px;
   height: 20px;
   background-image: url("../../img/icon-menu-close.svg");
+}
+
+.main-nav__wrapper {
+  display: flex;
+}
+
+.main-nav__wrapper--mobile {
+  flex-direction: column;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
