@@ -5,8 +5,9 @@
 
 .page-header__logo-link {
   display: flex;
-  margin-top: 22px;
-  margin-right: auto;
-  margin-bottom: 22px;
-  margin-left: auto;
+  margin: 22px auto;
+}
+
+.page-header__main-nav {
+  flex-direction: column;
 }

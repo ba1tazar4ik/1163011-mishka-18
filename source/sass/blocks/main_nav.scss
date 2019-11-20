@@ -1,0 +1,31 @@
+.main-nav {
+  display: flex;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-nav__toggle--no-js {
+  display: none;
+}
+
+.main-nav__toggle--open {
+  top: 32px;
+  right: 31px;
+  width: 20px;
+  height: 14px;
+  background-image: url("../../img/icon-menu-open.svg");
+}
+
+.main-nav__toggle--close {
+  top: 29px;
+  right: 30px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../../img/icon-menu-close.svg");
+}
