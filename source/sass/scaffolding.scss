@@ -27,7 +27,8 @@ body {
 
   background-color: $bg-white;
   background-image: url("../img/mishka-index-mobile.jpg");
-  background-position:  center start;
+  background-position:  top center;
+  background-repeat: no-repeat;
 }
 
 img {
