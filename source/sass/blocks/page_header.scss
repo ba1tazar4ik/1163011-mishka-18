@@ -6,4 +6,14 @@
 .page-header__logo-link {
   display: flex;
   margin: 22px auto;
+  fill: $text-black;
+
+  &:hover,
+  &:focus {
+    fill: $text-hover-color;
+  }
+
+  &:active {
+    fill: $text-down-color;
+  }
 }
