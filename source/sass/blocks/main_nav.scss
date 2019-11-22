@@ -52,8 +52,8 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: $text-black;
-  fill: $text-black;
+  color: $text-dark;
+  fill: $text-dark;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -61,7 +61,7 @@
   &:hover,
   &:focus {
     color: $text-hover-color;
-    fill: $icon-hover-color;
+    fill: $green-color;
   }
 
   &:active {

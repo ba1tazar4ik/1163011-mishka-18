@@ -22,7 +22,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   font-family: "Open Sans", sans-serif;
-  color: $text-black;
+  color: $text-dark;
   font-style: normal;
 
   background-color: $bg-white;
@@ -62,4 +62,9 @@ ul {
   border: 0;
 
   clip-path: inset(100%);
+}
+
+.padding-container {
+  padding-left: 30px;
+  padding-right: 30px;
 }

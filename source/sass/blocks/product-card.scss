@@ -1,0 +1,19 @@
+.product-card {
+  padding-top: 27px;
+}
+
+.product-card__mark{
+  display: block;
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $green-color;
+  text-transform: uppercase;
+  color: red;
+}
+
+.product-card__content {
+  padding-top: 23px;
+}
+
