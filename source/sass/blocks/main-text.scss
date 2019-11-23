@@ -3,5 +3,29 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  color: #444444;
+  color: $black-soft-color;
+}
+
+.main-text--link {
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $green-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    padding-left: 1%;
+    width: 98%;
+    height: 1px;
+    background-color: $green-color;
+  }
 }

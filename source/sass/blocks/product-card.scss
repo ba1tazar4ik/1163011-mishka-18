@@ -1,7 +1,3 @@
-.product-card {
-  padding-top: 27px;
-}
-
 .product-card__mark {
   display: block;
   margin-top: 5px;
@@ -13,6 +9,8 @@
 }
 
 .product-card__content {
+  display: flex;
+  flex-direction: column;
   padding-top: 23px;
 }
 
@@ -26,9 +24,14 @@
 }
 
 .product-card__cost {
+  margin-top: 23px;
   text-align: center;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  color: #444444;
+  color: $black-soft-color;
+}
+
+.product-card__button {
+  margin-top: 10px;
 }
