@@ -1,0 +1,42 @@
+.size-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
+  padding-top: 29px;
+  padding-bottom: 45px;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.size-select__title {
+  text-transform: uppercase;
+}
+
+.size-select__mark {
+  text-align: center;
+  margin-top: 14px;
+  line-height: 30px;
+}
+.modal__fieldset {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 23px;
+}
+.size-select__label {
+  padding-top: 12px;
+  padding-right: 34px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  border: 2px solid #444444;
+  opacity: 0.3;
+}
