@@ -1,7 +1,8 @@
 .main-text {
   margin: 0;
-  font-size: 15px;
+
   font-weight: 400;
+  font-size: 15px;
   line-height: 24px;
   color: $black-soft-color;
 }
@@ -21,11 +22,13 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
     bottom: -6px;
-    padding-left: 1%;
+    left: 0;
+
     width: 98%;
     height: 1px;
+    padding-left: 1%;
+
     background-color: $green-color;
   }
 }

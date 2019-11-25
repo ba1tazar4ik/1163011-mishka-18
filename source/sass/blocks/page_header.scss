@@ -6,9 +6,10 @@
 .page-header__logo-link {
   display: flex;
   margin: 22px auto;
+
   fill: $text-dark;
 
-  &:hover,
+  &[href]:hover,
   &:focus {
     fill: $text-hover-color;
   }

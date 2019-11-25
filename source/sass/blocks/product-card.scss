@@ -1,8 +1,9 @@
 .product-card__mark {
   display: block;
   margin-top: 5px;
-  font-size: 17px;
+
   font-weight: 700;
+  font-size: 17px;
   line-height: 20px;
   color: $green-color;
   text-transform: uppercase;
@@ -25,10 +26,11 @@
 
 .product-card__cost {
   margin-top: 23px;
-  text-align: center;
-  font-size: 17px;
+
   font-weight: 700;
+  font-size: 17px;
   line-height: 24px;
+  text-align: center;
   color: $black-soft-color;
 }
 

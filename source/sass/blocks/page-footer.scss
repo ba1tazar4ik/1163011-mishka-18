@@ -1,14 +1,16 @@
 .page-footer {
-  background-color: #f1f1f1;
   padding-bottom: 25px;
+
+  background-color: #f1f1f1;
 }
 
 .page-footer__social-list {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -24,6 +26,7 @@
 .page-footer__social-link {
   display: flex;
   padding: 5px;
+
   fill: #221f1f;
 
   &:hover,
@@ -38,15 +41,17 @@
 
 .page-footer__copyright {
   display: flex;
-  margin-top: 15px;
-  margin-left: 34px;
-  margin-right: 34px;
-  padding: 5px;
   align-items: center;
-  font-size: 19px;
+  margin-top: 15px;
+  margin-right: 34px;
+  margin-left: 34px;
+  padding: 5px;
+
   font-weight: 700;
+  font-size: 19px;
   line-height: 18px;
   color: $text-dark;
+
   fill: $green-color;
 
   &:hover,
@@ -55,8 +60,9 @@
   }
 
   &:active {
-    fill: #46c1ae;
     opacity: 0.3;
+
+    fill: #46c1ae;
   }
 }
 

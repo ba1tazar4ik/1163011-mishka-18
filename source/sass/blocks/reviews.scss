@@ -1,20 +1,23 @@
 .reviews {
   position: relative;
-  padding-bottom: 51px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 51px;
 
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
+
     width: 100%;
     height: 6px;
+
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
     background-repeat: repeat-x;
+    background-size: contain;
   }
 }
 
@@ -24,14 +27,16 @@
 
 .review-block__text {
   margin-top: 24px;
+
   line-height: 30px;
 }
 
 .review-block__name {
   display: block;
   margin-top: 26px;
-  font-size: 17px;
+
   font-weight: 700;
+  font-size: 17px;
   line-height: 24px;
   color: $text-dark;
 }
@@ -39,8 +44,9 @@
 .review-block__nickname {
   display: block;
   margin-top: 3px;
-  font-size: 17px;
+
   font-weight: 400;
+  font-size: 17px;
   line-height: 30px;
   color: $black-soft-color;
 }
@@ -50,12 +56,15 @@
   justify-content: center;
   height: 50px;
   margin-top: 30px;
+
   border: 1px solid $border-grey;
 }
 
 .slider__arrow {
   position: relative;
+
   width: 100%;
+
   background-color: transparent;
   border: none;
 }
@@ -68,10 +77,12 @@
   &::after {
     content: "";
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
+
     width: 1px;
     height: 50px;
+
     background-color: $border-grey;
   }
 }
@@ -85,5 +96,6 @@
 .review__button {
   display: block;
   margin-top: 38px;
+
   text-align: center;
 }

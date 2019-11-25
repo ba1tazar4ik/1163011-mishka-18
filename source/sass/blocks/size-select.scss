@@ -1,18 +1,20 @@
 .size-select {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 320px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-  border: 1px solid #c6c6c6;
   padding-top: 29px;
   padding-bottom: 45px;
-  box-sizing: border-box;
+
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  transform: translate(-50%, -50%);
 }
 
 .size-select__title {
@@ -20,15 +22,16 @@
 }
 
 .size-select__mark {
-  text-align: center;
   margin-top: 14px;
+
   line-height: 30px;
+  text-align: center;
 }
 
 .modal__fieldset {
   display: flex;
-  width: 260px;
   justify-content: space-between;
+  width: 260px;
   margin-top: 15px;
   margin-bottom: 23px;
 }
@@ -38,6 +41,7 @@
   padding-right: 34px;
   padding-bottom: 12px;
   padding-left: 34px;
+
   border: 2px solid #444444;
   opacity: 0.3;
 }

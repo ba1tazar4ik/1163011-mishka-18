@@ -1,7 +1,8 @@
 .main-title {
   margin: 0 auto;
-  font-size: 27px;
+
   font-weight: 700;
+  font-size: 27px;
   line-height: 30px;
   text-align: center;
 }
@@ -9,7 +10,8 @@
 .main-title--main-page {
   padding-top: 70px;
   padding-bottom: 123px;
+
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: center -18px;
   background-repeat: no-repeat;
+  background-position: center -18px;
 }
