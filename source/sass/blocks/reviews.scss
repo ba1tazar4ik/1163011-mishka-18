@@ -62,35 +62,43 @@
 
 .slider__arrow {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $text-dark;
 
   width: 100%;
 
   background-color: transparent;
   border: none;
-}
+  cursor: pointer;
 
-.slider__arrow--left {
-  background-image: url("../img/icon-left-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  &:hover,
+  &:focus {
+    fill: $text-hover-color;
+  }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    width: 1px;
-    height: 50px;
-
-    background-color: $border-grey;
+  &:active {
+    fill: $text-down-color;
   }
 }
 
-.slider__arrow--right {
-  background-image: url("../img/icon-right-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+.slider__arrow--devider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 1px;
+  height: 50px;
+
+  background-color: $border-grey;
+}
+
+
+.slider__arrow-img {
+  width: 50px;
+  height: 26px;
 }
 
 .review__button {

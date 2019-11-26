@@ -142,8 +142,18 @@
         <span class="review-block__nickname">@misssssiskras</span>
       </li>
       <div class="slider__nav">
-        <button class="slider__arrow slider__arrow--left"><span class="visually-hidden">Предыдущий отзыв</span></button>
-        <button class="slider__arrow slider__arrow--right"><span class="visually-hidden">Следующий отзыв</span></button>
+        <button class="slider__arrow slider__arrow--devider">
+          <svg class="slider__arrow-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" >
+            <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+          </svg>
+          <span class="visually-hidden">Предыдущий отзыв</span>
+        </button>
+        <button class="slider__arrow">
+          <svg class="slider__arrow-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" >
+            <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+          </svg>
+          <span class="visually-hidden">Следующий отзыв</span>
+        </button>
       </div>
       <a class="button review__button" href="#">Написать</a>
     </ul>
@@ -220,12 +230,12 @@
       <h2 class="size-select__title main-title">Добавить<br>в корзину</h2>
       <p class="size-select__mark main-text">Выберите размер:</p>
       <fieldset class="modal__fieldset">
-        <label class="size-select__label" for="size-S">S</label>
         <input class="size-select__input visually-hidden" type="radio" id="size-S" name="size" value="S" checked>
-        <label class="size-select__label" for="size-M">M</label>
+        <label class="size-select__label" for="size-S">S</label>
         <input class="size-select__input visually-hidden" type="radio" id="size-M" name="size" value="M">
-        <label class="size-select__label" for="size-L">L</label>
+        <label class="size-select__label" for="size-M">M</label>
         <input class="size-select__input visually-hidden" type="radio" id="size-L" name="size" value="L">
+        <label class="size-select__label" for="size-L">L</label>
       </fieldset>
       <button class="button modal__button button--aquamarine">Добавить</button>
     </form>
