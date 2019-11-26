@@ -62,16 +62,17 @@
 
 .slider__arrow {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: $text-dark;
-
   width: 100%;
 
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  fill: $text-dark;
 
   &:hover,
   &:focus {

@@ -37,31 +37,30 @@
 }
 
 .size-select__label {
-  color: $black-soft-color;
-  display: block;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 16px;
-  text-transform: uppercase;
-  cursor: pointer;
   padding-top: 12px;
   padding-right: 34px;
   padding-bottom: 12px;
   padding-left: 34px;
 
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $black-soft-color;
+  text-transform: uppercase;
+
   border: 2px solid rgba(#444444,0.1);
+  cursor: pointer;
 
   &:hover,
   &:focus {
     border-color: rgba(#444444,0.3);
   }
 
-  &:active{
+  &:active {
     border-color: #62d1ba;
-
   }
 }
 
-.size-select__input[checked] + label{
+.size-select__input[checked] + label {
   border-color: $green-color;
 }
