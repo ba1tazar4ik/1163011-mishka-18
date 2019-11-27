@@ -15,6 +15,7 @@
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   transform: translate(-50%, -50%);
+  background-color: $bg-white;
 }
 
 .size-select__title {
@@ -61,6 +62,6 @@
   }
 }
 
-.size-select__input[checked] + label {
+.size-select__input:checked + label {
   border-color: $green-color;
 }
