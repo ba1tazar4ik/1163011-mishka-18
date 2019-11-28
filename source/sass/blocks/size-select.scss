@@ -49,12 +49,12 @@
   color: $black-soft-color;
   text-transform: uppercase;
 
-  border: 2px solid rgba(#444444,0.1);
+  border: 2px solid rgba(#444444, 0.1);
   cursor: pointer;
 
   &:hover,
   &:focus {
-    border-color: rgba(#444444,0.3);
+    border-color: rgba(#444444, 0.3);
   }
 
   &:active {
