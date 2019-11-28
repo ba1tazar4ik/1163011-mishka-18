@@ -1,0 +1,25 @@
+.knitting-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+.knitting-form__tittle {
+  position: relative;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $green-color;
+  color: red;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: calc(100% - 62px);
+    height: 1px;
+    background-color: red;
+  }
+}

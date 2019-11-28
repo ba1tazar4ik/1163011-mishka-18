@@ -28,7 +28,7 @@ body {
   color: $text-dark;
 
   background-color: $bg-white;
-  background-image: url("../img/61-layers.png");
+  background-image: url("../img/83-layers.png");
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -51,6 +51,10 @@ ul {
 
 td {
   padding: 0;
+}
+
+h3 {
+  margin: 0;
 }
 
 .visually-hidden {
