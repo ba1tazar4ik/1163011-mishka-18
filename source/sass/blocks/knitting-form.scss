@@ -1,7 +1,36 @@
 .knitting-form {
   display: flex;
   flex-direction: column;
-  padding-top: 24px;
+  padding-bottom: 55px;
+}
+
+.knitting-form__fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &--type {
+    margin-top: 24px;
+  }
+
+  &--color {
+    margin-top: 44px;
+  }
+
+  &--name {
+    margin-top: 26px;
+  }
+
+  &--phone {
+    margin-top: 32px;
+  }
+
+  &--email {
+    margin-top: 16px;
+  }
+  &--wishes {
+    margin-top: 32px;
+  }
 }
 
 .knitting-form__tittle {
@@ -12,6 +41,7 @@
   color: $green-color;
   color: red;
   text-transform: uppercase;
+  margin-bottom: 9px;
 
   &::after {
     content: "";
@@ -22,4 +52,124 @@
     height: 1px;
     background-color: red;
   }
+}
+
+.knitting-form__icon {
+  position: absolute;
+  fill: $text-dark;
+  opacity: 0.2;
+
+  &--phone {
+    top: 35px;
+    right: 7px;
+    width: 25px;
+    height: 24px;
+  }
+
+  &--email {
+    top: 50px;
+    right: 4px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.knitting-form__input {
+  display: block;
+  border: none;
+  box-shadow: inset 0 -2px 0 $text-dark;
+  background-color: transparent;
+  padding-top: 16px;
+
+  &::-webkit-input-placeholder {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.3;
+    color: $black-soft-color;
+  }
+
+  &--phone::-webkit-input-placeholder {
+    font-size: 19px;
+  }
+
+  &::-moz-placeholder {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.3;
+    color: $black-soft-color;
+  }
+
+  &--phone::-moz-placeholder {
+    font-size: 19px;
+  }
+
+  &::-ms-input-placeholder {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.3;
+    color: $black-soft-color;
+  }
+
+  &--phone::-ms-input-placeholder {
+    font-size: 19px;
+  }
+
+  &--name {
+    padding-bottom: 20px;
+   }
+
+   &--phone {
+     padding-top: 13px;
+     padding-bottom: 22px;
+   }
+
+   &--email {
+     padding-top: 13px;
+     padding-bottom: 21px;
+   }
+
+   &--wishes {
+     margin-top: 16px;
+     padding-top: 16px;
+     padding-left: 18px;
+     padding-bottom: 4px;
+     box-shadow: inset -2px -2px 0 $text-dark, inset 2px 2px 0 $text-dark;
+   }
+}
+
+.knitting-form__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height:18px;
+  color: $text-dark;
+  color: red;
+
+  &--radio {
+    margin-top: 24px;
+    margin-left: 64px;
+  }
+
+  &--checkbox {
+    margin-top: 28px;
+    margin-bottom: 15px;
+    margin-left: 64px;
+  }
+
+  &--text {
+    margin-top: 21px;
+  }
+}
+
+.knitting-form__notice {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $black-soft-color;
+}
+
+.knitting-form__button {
+  margin-top: 18px;
 }
