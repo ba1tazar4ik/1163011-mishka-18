@@ -1,0 +1,21 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: none;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba($bg-white, 0.9);
+}
+
+.modal__fieldset {
+  border: none;
+}
+
+.modal__button {
+  width: 260px;
+}

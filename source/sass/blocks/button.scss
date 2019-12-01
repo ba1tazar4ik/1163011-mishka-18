@@ -1,0 +1,28 @@
+.button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $black-soft-color;
+  text-transform: uppercase;
+
+  background-color: $bg-white;
+  border: 2px solid $black-soft-color;
+  cursor: pointer;
+
+
+  &:hover,
+  &:focus {
+    color: $text-light;
+
+    background-color: $black-soft-color;
+  }
+
+  &:active {
+    color: rgba($text-light, 0.3);
+
+    background-color: $black-soft-color;
+  }
+}

@@ -1,0 +1,21 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo-link {
+  display: flex;
+  align-self: center;
+  margin: 22px auto;
+
+  fill: $text-dark;
+
+  &[href]:hover,
+  &:focus {
+    fill: $text-hover-color;
+  }
+
+  &:active {
+    fill: $text-down-color;
+  }
+}
