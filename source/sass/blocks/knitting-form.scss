@@ -37,7 +37,6 @@
 }
 
 .knitting-form__tittle {
-  position: relative;
 
   margin-bottom: 14px;
 
@@ -46,17 +45,20 @@
   line-height: 16px;
   color: $green-color;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 
   &::after {
     content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
 
-    width: calc(100% - 62px);
+    width: 100% ;
     height: 1px;
 
     background-color: #62d1ba;
+  }
+
+  &-wrapper {
+    padding-right: 25px;
   }
 }
 
@@ -181,6 +183,34 @@
   &--wishes:focus {
     box-shadow: inset -2px -2px 0 #62d1ba, inset 2px 2px 0 #62d1ba;
   }
+
+  &:checked + .knitting-form__label--radio::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 12px;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: #62d1ba;
+    border-radius: 50%;
+  }
+
+  &:checked + .knitting-form__label--checkbox::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 10px;
+
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../img/icon-tick.svg");
+    background-position: center center;
+    background-size: 22px 16px;
+    background-repeat: no-repeat;
+  }
 }
 
 .knitting-form__label {
@@ -257,20 +287,6 @@
   }
 }
 
-.knitting-form__input:checked + .knitting-form__label--radio::after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: 12px;
-
-  width: 15px;
-  height: 15px;
-
-  background-color: #62d1ba;
-  border-radius: 50%;
-}
-
-
 .knitting-form__notice {
   margin: 0;
   margin-top: 14px;
@@ -292,8 +308,4 @@
 
   width: 22px;
   height: 16px;
-}
-
-.knitting-form__input:checked + .knitting-form__label--checkbox {
-  fill: $text-dark;
 }
