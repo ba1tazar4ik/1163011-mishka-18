@@ -17,7 +17,7 @@
 }
 
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
 
@@ -29,9 +29,9 @@ body {
   font-family: "Open Sans", sans-serif;
 
   background-color: $bg-white;
-  // background-image: url("../img/83-layers.png");
-  // background-position: center top;
-  // background-repeat: no-repeat;
+  //background-image: url("../img/83-layers.png");
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 img {
@@ -42,7 +42,9 @@ img {
 a {
   text-decoration: none;
 }
-
+p {
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -78,4 +80,11 @@ h3 {
 .padding-container {
   padding-right: 30px;
   padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+  body {
+    min-width: 768px;
+    //background-image: url("../img/mishka-index-tablet.jpg");
+  }
 }
