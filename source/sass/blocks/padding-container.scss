@@ -1,0 +1,22 @@
+.padding-container {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  &--width-wrapper {
+    width: 100vh;
+    max-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 768px) {
+  .padding-container {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &--width-wrapper {
+      max-width: 768px;
+    }
+  }
+}

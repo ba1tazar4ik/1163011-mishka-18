@@ -25,13 +25,13 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: $black-soft-color;
   font-family: "Open Sans", sans-serif;
+  color: $black-soft-color;
 
   background-color: $bg-white;
+  background-repeat: no-repeat;
   //background-image: url("../img/83-layers.png");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 img {
@@ -42,9 +42,11 @@ img {
 a {
   text-decoration: none;
 }
+
 p {
   margin: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -75,11 +77,6 @@ h3 {
 
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
-}
-
-.padding-container {
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 @media (min-width: 768px) {
