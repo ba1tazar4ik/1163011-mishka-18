@@ -1,3 +1,6 @@
+.page-nav {
+  width: 100%;
+}
 .page-nav__list {
   display: flex;
   flex-direction: column;
@@ -32,7 +35,6 @@
   position: relative;
 
   display: flex;
-  width: 100%;
   padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 27px;
@@ -62,7 +64,7 @@
 
 .page-nav__link--interior::after {
   top: 23px;
-  right: 64px;
+  right: 34px;
 
   width: 40px;
   height: 62px;
@@ -73,7 +75,7 @@
 
 .page-nav__link--toy::after {
   top: 22px;
-  right: 54px;
+  right: 24px;
 
   width: 60px;
   height: 60px;

@@ -3,27 +3,6 @@
   flex-direction: column;
 }
 
-.page-header__logo-link {
-  display: flex;
-  align-self: center;
-  margin: 22px auto;
-
-  fill: $text-dark;
-
-  &[href]:hover,
-  &:focus {
-    fill: $text-hover-color;
-  }
-
-  &:active {
-    fill: $text-down-color;
-  }
-}
-
-.page-header__logo-img--tablet {
-  display: none;
-}
-
 .page-header__main-nav {
   width: 100vh;
   max-width: 320px;
@@ -31,15 +10,6 @@
 }
 
 @media (min-width: 768px) {
-  .page-header__logo-img {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
-  }
   .page-header__main-nav {
     max-width: 768px;
   }

@@ -1,0 +1,52 @@
+.logo-link {
+  display: flex;
+  align-self: center;
+
+  fill: $text-dark;
+
+  &[href]:hover,
+  &:focus {
+    fill: $text-hover-color;
+  }
+
+  &:active {
+    fill: $text-down-color;
+  }
+
+  &--margin {
+    margin: 22px auto;
+  }
+
+  &-img {
+    &--tablet {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-link {
+    align-self:flex-start;
+
+    &--margin {
+      margin-left: 35px;
+      margin-top: 12px;
+      margin-right: 200px;
+      margin-bottom: 12px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+  .logo-link__img {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      padding: 10px;
+    }
+  }
+}
