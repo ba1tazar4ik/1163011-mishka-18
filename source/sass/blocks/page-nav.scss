@@ -1,6 +1,7 @@
 .page-nav {
   width: 100%;
 }
+
 .page-nav__list {
   display: flex;
   flex-direction: column;
@@ -82,4 +83,72 @@
 
   background-image: url("../../img/icon-toy.svg");
   background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .page-nav {
+    position: relative;
+    width:auto;
+    background-color: #f8f8f8;
+
+    &__list {
+      flex-direction: row;
+      max-width: 768px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin: 0 auto;
+    }
+
+    &__item {
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 8px;
+    }
+
+    &__link {
+      padding: 20px;
+      line-height: 30px;
+
+      &--interior::after {
+        top: 21px;
+        right: 36px;
+      }
+
+      &--toy::after {
+        right: 36px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      height: 25px;
+      width: 100%;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-nav {
+    &__list {
+      max-width: 1150px;
+    }
+
+    &__link {
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-bottom: 30px;
+    }
+
+    &::after {
+      bottom: -12px;
+      left: 12px;
+      height: 34px;
+    }
+  }
 }

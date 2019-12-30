@@ -53,3 +53,29 @@
   width: 50px;
   height: 26px;
 }
+
+@media (min-width: 768px) {
+  .slider__nav {
+    border: none;
+    width: 140px;
+    margin-left: 510px;
+    margin-top: -52px;
+  }
+
+  .slider__arrow {
+    padding: 10px;
+    margin-left: 9px;
+    margin-right: 9px;
+    width: auto;
+  }
+
+  .slider__arrow--devider::after {
+    display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .slider__nav {
+    margin-left: 715px;
+  }
+}

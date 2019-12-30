@@ -14,3 +14,10 @@
     max-width: 768px;
   }
 }
+
+@media (min-width: 1150px) {
+  .page-header__main-nav {
+    width: auto;
+    max-width: 1150px;
+  }
+}

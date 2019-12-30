@@ -100,3 +100,60 @@
 
   background-image: url("../img/icon-feature-gift.svg");
 }
+
+@media (min-width: 768px) {
+  .advantages {
+    align-items: flex-start;
+    &__title {
+      margin-top: 50px;
+      margin-left: -4px;
+    }
+
+    &__list {
+      margin-top: 105px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 50%;
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 110px;
+
+      &--flower {
+        order: 1;
+      }
+
+      &--money {
+        order: 3;
+      }
+
+      &--heart {
+        order: 5;
+      }
+
+      &--ball {
+        order: 2;
+      }
+
+      &--rocket {
+        order: 4;
+      }
+
+      &--gift {
+        order: 6;
+      }
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .advantages {
+    padding-left: 224px;
+    padding-right: 224px;
+    &__title {
+      margin-top: 60px;
+    }
+  }
+}

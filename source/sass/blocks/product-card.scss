@@ -47,8 +47,18 @@
   border-bottom: 1px solid $border-grey;
 }
 
+.product-card__img {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
 .product-card__cost {
-  margin-top: 23px;
+  margin-top: 18px;
 
   font-weight: 700;
   font-size: 17px;
@@ -70,8 +80,8 @@
 .product-card__button {
   margin-top: 25px;
   align-self: center;
-  min-width: 259px;
-  max-width: 292px;
+  padding-left: 83px;
+  padding-right: 83px;
 
   &--cataloge-page {
     position: absolute;
@@ -95,5 +105,115 @@
 
   &--cataloge-page:active {
     fill: rgba($green-color, 0.3);
+  }
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__header {
+      display: flex;
+      width: 100%;
+    }
+
+    &__title {
+      margin-left: -3px;
+      margin-top: 20px;
+      margin-right: 145px;
+    }
+
+    &__mark {
+      width: 70px;
+      line-height: 17px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    &__content {
+      width: 50%;
+      padding-top: 48px;
+      padding-right: 40px;
+      box-sizing: border-box;
+    }
+
+    &__description {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__property {
+      margin-top: 37px;
+    }
+
+    &__img {
+      width: 50%;
+      margin-top: 57px;
+
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: block;
+      }
+    }
+
+    &__order {
+      margin-top: -112px;
+    }
+
+    &__cost {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    &__button {
+      margin-top: 34px;
+      margin-left: -2px;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .product-card {
+    &__header {
+      margin-bottom: -74px;
+      margin-top: 74px;
+      margin-left: 47px;
+    }
+    &__title {
+      order: 2;
+      margin-left: 54px;
+      z-index: 1;
+    }
+
+    &__mark {
+      order: 1;
+      padding-top: 2px;
+    }
+
+    &__content {
+      margin-top: 76px;
+      padding-left: 175px;
+      padding-right: 50px;
+    }
+
+    &__property {
+      margin-top: 49px;
+    }
+
+    &__img {
+      position: relative;
+      margin-top: -34px;
+      z-index: 0;
+    }
+
+    &__order {
+      padding-left: 175px;
+    }
   }
 }

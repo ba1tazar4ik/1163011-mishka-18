@@ -6,3 +6,17 @@
   line-height: 30px;
   color: $text-dark;
 }
+
+@media (min-width: 768px) {
+  .main-subtitle {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width:1150px) {
+  .main-subtitle {
+    font-size: 53px;
+    line-height: 53px;
+  }
+}

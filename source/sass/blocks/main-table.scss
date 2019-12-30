@@ -11,3 +11,16 @@
   padding-top: 7px;
   padding-bottom: 8px;
 }
+
+@media (min-width: 1150px) {
+  .main-table__value {
+    padding-right: 60px;
+  }
+
+  .main-table__value,
+  .main-table__field {
+    padding-top: 7px;
+    padding-bottom: 8px;
+
+  }
+}

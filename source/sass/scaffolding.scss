@@ -29,9 +29,6 @@ body {
   color: $black-soft-color;
 
   background-color: $bg-white;
-  background-repeat: no-repeat;
-  //background-image: url("../img/83-layers.png");
-  background-position: center top;
 }
 
 img {
@@ -79,9 +76,6 @@ h3 {
   clip-path: inset(100%);
 }
 
-@media (min-width: 768px) {
-  body {
-    min-width: 768px;
-    //background-image: url("../img/mishka-index-tablet.jpg");
-  }
-}
+//* {
+//  border: 1px solid red;
+//}
