@@ -15,9 +15,16 @@
   padding-top: 23px;
 }
 
-.product-card__image--catalog-page {
-  width: 260px;
-  height: 195px;
+.product-card__image{
+  width: 100%;
+  height: auto;
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .product-card__description--catalog-page {
@@ -83,7 +90,7 @@
   padding-left: 83px;
   padding-right: 83px;
 
-  &--cataloge-page {
+  &--catalog-page {
     position: absolute;
     right: 21px;
     bottom: 21px;
@@ -98,12 +105,12 @@
     fill: rgba($text-dark, 0.2);
   }
 
-  &--cataloge-page:hover,
-  &--cataloge-page:focus {
+  &--catalog-page:hover,
+  &--catalog-page:focus {
     fill: $green-color;
   }
 
-  &--cataloge-page:active {
+  &--catalog-page:active {
     fill: rgba($green-color, 0.3);
   }
 }
@@ -116,6 +123,29 @@
     &__header {
       display: flex;
       width: 100%;
+    }
+
+    &__image {
+      width: 50%;
+      height: auto;
+
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: block;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 50%;
+      box-sizing: border-box;
+      padding-top: 23px;
+      padding-left: 25px;
     }
 
     &__title {
@@ -141,6 +171,11 @@
     &__description {
       font-size: 17px;
       line-height: 30px;
+    }
+
+    &__description--catalog-page {
+      font-size: 15px;
+      flex-grow: 1;
     }
 
     &__property {
@@ -169,11 +204,23 @@
       font-size: 20px;
     }
 
+    &__cost--catalog-page {
+      margin-top: 21px;
+      margin-left: 2px;
+      font-size: 17px;
+    }
+
     &__button {
       margin-top: 34px;
       margin-left: -2px;
       padding-left: 100px;
       padding-right: 100px;
+    }
+
+    &__button--catalog-page {
+      margin: 0;
+      padding: 10px;
+      bottom: 18px;
     }
   }
 }
@@ -185,6 +232,19 @@
       margin-top: 74px;
       margin-left: 47px;
     }
+
+    &__image {
+      width: 100%;
+
+      &--tablet {
+        display: none;
+      }
+
+      &--desktop {
+        display: block;
+      }
+    }
+
     &__title {
       order: 2;
       margin-left: 54px;

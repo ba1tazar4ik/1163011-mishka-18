@@ -39,14 +39,33 @@
     margin-top: -52px;
     font-size: 43px;
     line-height: 50px;
-  }
 
-  .main-title--main-page {
-    padding-top: 151px;
-    padding-bottom: 374px;
-    background-image: url("../img/hero-tablet@1x.jpg");
-    background-size: auto;
-    background-position: center top;
+    &--main-page {
+      padding-top: 151px;
+      padding-bottom: 374px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-size: auto;
+      background-position: center top;
+    }
+
+    &--regular-page {
+      position: relative;
+      padding-top: 95px;
+      padding-bottom: 80px;
+      z-index: -1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -14px;
+        left: 0;
+        height: 25px;
+        width: 100%;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-repeat: repeat-x;
+        background-size: contain;
+      }
+    }
   }
 }
 
@@ -54,11 +73,15 @@
   .main-title {
     font-size: 53px;
     line-height: 57px;
-  }
 
-  .main-title--main-page {
-    padding-top: 154px;
-    padding-bottom: 359px;
-    background-image: url("../img/hero-desktop@1x.jpg");
+    &--main-page {
+      padding-top: 154px;
+      padding-bottom: 359px;
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
+
+    &--regular-page {
+      padding-bottom: 95px;
+    }
   }
 }

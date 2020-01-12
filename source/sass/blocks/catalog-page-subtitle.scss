@@ -1,4 +1,12 @@
 .catalog-page-subtitle {
   font-size: 17px;
   line-height: 24px;
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .catalog-page-subtitle {
+    padding-right: 45px;
+    font-size: 20px;
+  }
 }

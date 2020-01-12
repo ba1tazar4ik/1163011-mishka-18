@@ -88,3 +88,51 @@
 
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .promo-video {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 53px;
+    margin-bottom: 63px;
+    padding-bottom: 45px;
+
+    &__tittle {
+      order: 2;
+      margin-top: 37px;
+      margin-left: 105px;
+
+      &::before {
+        top: 2px;
+        left: -65px;
+      }
+    }
+
+    &__media {
+      order: 1;
+      height: 455px;
+      background-image: url("../img/video-tablet@1x.jpg");
+    }
+
+    &__wrapper {
+      order: 3;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 30px;
+      color: red;
+      margin-top: 7px;
+      margin-left: 5px;
+      margin-bottom: 36px;
+      padding-right: 10px;
+    }
+
+    &__button {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
