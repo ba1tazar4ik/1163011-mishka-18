@@ -219,6 +219,7 @@
   font-size: 17px;
   line-height: 18px;
   color: $text-dark;
+  cursor: pointer;
 
   &--radio {
     margin-top: 9px;
@@ -275,6 +276,7 @@
   &--checkbox:hover::before,
   &--checkbox:focus::before {
     border-color: #62d1ba;
+    cursor: pointer;
   }
 
   &--checkbox:active::before {
@@ -307,4 +309,78 @@
 
   width: 22px;
   height: 16px;
+}
+
+@media (min-width: 768px) {
+  .knitting-form {
+    padding: 0;
+    &__fieldset {
+      &--type {
+        padding-top: 7px;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      &--color {
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #f1f1f1;
+        padding-left: 154px;
+        padding-top: 41px;
+      }
+    }
+
+    &__tittle {
+      position: absolute;
+
+      &::after {
+        display: none;
+        top: 0;
+        left: 0;
+      }
+
+      &--type {
+        top: 52px;
+        left: 0;
+      }
+    }
+
+    &__input {
+      &:checked + .knitting-form__label--radio::after {
+        top: 10px;
+        left: -55px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__label {
+      display: inline-flex;
+      align-items: center;
+      font-size: 19px;
+      padding: 10px;
+      margin: 0;
+      margin-top: 35px;
+      margin-left: 238px;
+
+      &--checkbox {
+        box-sizing: border-box;
+        margin: 0;
+        margin-top: 2px;
+        margin-left: 4px;
+      }
+
+      &--radio::before {
+        top: -6px;
+        left: -72px;
+        width: 48px;
+        height: 48px;
+      }
+
+      &--checkbox::before {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
 }
