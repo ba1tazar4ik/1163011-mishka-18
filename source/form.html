@@ -130,11 +130,20 @@
     <form class="knitting-form padding-container" action="https://echo.htmlacademy.ru" method="post" name="knitting-form">
       <h2 class="visually-hidden">Форма заказа вязанных изделий</h2>
       <div class="knitting-form__fieldset knitting-form__fieldset--type">
-        <h3 class="knitting-form__tittle knitting-form__tittle--type"><span class="knitting-form__tittle-wrapper">Тип</span></h3>
-        <input class="knitting-form__input visually-hidden" type="radio" id="accessory" name="accessory-type" value="knitting-accessory" checked>
-        <label class="knitting-form__label knitting-form__label--radio" for="accessory">Аксессуар для интерьера</label>
-        <input class="knitting-form__input visually-hidden" type="radio" id="toy" name="accessory-type" value="knitting-toy">
-        <label class="knitting-form__label knitting-form__label--radio" for="toy">Детская игрушка</label>
+        <div class="knitting-form__fieldset-inner">
+          <h3 class="knitting-form__tittle knitting-form__tittle--type"><span
+          class="knitting-form__tittle-wrapper">Тип</span></h3>
+          <div class="knitting-form__controls knitting-form__controls--type">
+            <input class="knitting-form__input visually-hidden" type="radio"
+                                                       id="accessory" name="accessory-type"
+                                                       value="knitting-accessory" checked>
+            <label class="knitting-form__label knitting-form__label--radio" for="accessory">Аксессуар для
+              интерьера</label>
+            <input class="knitting-form__input visually-hidden" type="radio" id="toy" name="accessory-type"
+                   value="knitting-toy">
+            <label class="knitting-form__label knitting-form__label--radio" for="toy">Детская игрушка</label>
+          </div>
+        </div>
       </div>
       <div class="knitting-form__fieldset knitting-form__fieldset--color">
         <h3 class="knitting-form__tittle"><span class="knitting-form__tittle-wrapper">Цвет</span></h3>
