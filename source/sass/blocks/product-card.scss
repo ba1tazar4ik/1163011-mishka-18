@@ -245,35 +245,23 @@
       }
     }
 
+    &__wrapper {
+      width: 100%;
+      flex-grow: 1;
+    }
+
     &__title {
       order: 2;
       margin-left: 54px;
       z-index: 1;
     }
 
-    &__mark {
-      order: 1;
-      padding-top: 2px;
+    &__description--catalog-page {
+      padding-bottom: 15px;
     }
 
-    &__content {
-      margin-top: 76px;
-      padding-left: 175px;
-      padding-right: 50px;
-    }
-
-    &__property {
-      margin-top: 49px;
-    }
-
-    &__img {
-      position: relative;
-      margin-top: -34px;
-      z-index: 0;
-    }
-
-    &__order {
-      padding-left: 175px;
+    &__cost--catalog-page {
+      margin-top: 20px;
     }
   }
 }

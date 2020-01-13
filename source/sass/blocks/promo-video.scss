@@ -123,7 +123,6 @@
     &__text {
       font-size: 15px;
       line-height: 30px;
-      color: red;
       margin-top: 7px;
       margin-left: 5px;
       margin-bottom: 36px;
@@ -133,6 +132,54 @@
     &__button {
       margin-left: 8px;
       margin-right: 8px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .promo-video {
+    position: relative;
+    padding-bottom: 0;
+    margin: 0 auto;
+    margin-top: 57px;
+    flex-direction: row;
+    margin-bottom: 105px;
+    width: 1048px;
+
+    &__tittle {
+      position: absolute;
+      right: 39px;
+      top: 95px;
+      margin: 0;
+      width: 230px;
+
+      &::before {
+        top: -48px;
+        left: 2px;
+      }
+    }
+
+    &__media {
+      width: 682px;
+      flex-shrink: 0;
+      background-image: url("../img/video-desktop@1x.jpg");
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    &__text {
+      padding-left: 37px;
+      margin-bottom: 47px;
+    }
+
+    &__button {
+      margin-left: 45px;
+      margin-right: 22px;
+      margin-bottom: 60px;
     }
   }
 }

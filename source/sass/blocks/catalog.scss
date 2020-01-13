@@ -22,13 +22,14 @@
   .catalog {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
     &__item {
       flex-direction: column;
-      box-sizing: border-box;
-      margin-top: 53px;
-      padding-left: 27px;
-      padding-right: 27px;
-      width: 376px;
+      margin-top: 108px;
+      padding-left: 25px;
+      padding-right: 25px;
+      width: 316px;
     }
   }
 }
