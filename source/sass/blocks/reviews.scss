@@ -99,12 +99,21 @@
 
 @media (min-width: 1150px) {
   .reviews {
-    padding-left: 226px;
     margin-top: -19px;
-    background-position-x: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 
     &::after {
       height: 23px;
+    }
+
+    &__inner {
+      padding: 0;
+      padding-left: 175px;
+    }
+
+    &__title {
+      margin-top: 73px;
     }
 
     &__block-text {

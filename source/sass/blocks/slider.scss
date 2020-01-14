@@ -75,7 +75,9 @@
 }
 
 @media (min-width: 1150px) {
-  .slider__nav {
+  .slider{
+    &__nav {
     margin-left: 715px;
+    }
   }
 }
