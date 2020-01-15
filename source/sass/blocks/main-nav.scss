@@ -51,6 +51,7 @@
   &--delivery {
     display: none;
   }
+
   &--new {
     display: none;
   }
@@ -192,9 +193,6 @@
 
   .main-nav__icon {
     position: static;
-
-    &--search {
-    }
 
     &--cart {
       padding-right: 31px;

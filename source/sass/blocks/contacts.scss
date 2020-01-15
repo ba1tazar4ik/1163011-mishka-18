@@ -15,6 +15,7 @@
   flex-direction: column;
   margin: 0 auto;
   margin-top: 22px;
+
   & ul {
     display: flex;
   }
@@ -94,6 +95,7 @@
       width: 100%;
       margin: 0 auto;
     }
+
     &__title {
       position: relative;
 
@@ -118,6 +120,7 @@
     &__text {
       flex-direction: row;
       margin-top: 50px;
+
       & ul:first-child {
         padding-right: 50px;
       }
@@ -175,6 +178,7 @@
     &__wrapper {
       width: 50%;
     }
+
     &__title {
       margin-top: 148px;
       margin-left: 168px;
