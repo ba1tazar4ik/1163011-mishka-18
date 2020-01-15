@@ -240,6 +240,15 @@
     border-radius: 50%;
   }
 
+  &--radio:hover::before,
+  &--radio:focus::before {
+    border-color: #62d1ba;
+  }
+
+  &--radio:active::before {
+    border-color: rgba($black-soft-color, 0.3);
+  }
+
   &--checkbox {
     position: relative;
 
@@ -317,4 +326,239 @@
 
 .knitting-form__button {
   margin-top: 31px;
+}
+
+@media (min-width: 768px) {
+  .knitting-form {
+    padding: 0;
+    padding-bottom: 32px;
+  }
+
+  .knitting-form__fieldset {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &--color {
+      background-color: #f1f1f1;
+      margin-top: 55px;
+      padding-top: 63px;
+      padding-bottom: 10px;
+    }
+
+    &--phone {
+      background-color: #f1f1f1;
+      margin-top: 25px;
+    }
+
+    &--email {
+      background-color: #f1f1f1;
+      margin-top: 0;
+      padding-top: 32px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .knitting-form__fieldset-inner {
+    max-width: 668px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .knitting-form__title {
+    &::after {
+      display: none;
+    }
+
+    &--type {
+      margin-top: 52px;
+    }
+
+    &--color {
+      margin-top: 2px;
+    }
+
+    &--name {
+      margin-top: 48px;
+    }
+
+    &--phone {
+      margin-top: 68px;
+    }
+
+    &--email {
+      margin-top: 10px;
+    }
+
+    &--wishes {
+      margin-top: 35px;
+    }
+  }
+
+  .knitting-form__title-wrapper {
+    padding-right: 0;
+  }
+
+  .knitting-form__controls {
+    flex-wrap: wrap;
+
+    &--type {
+      padding-left: 209px;
+      padding-top: 33px;
+    }
+
+    &--color {
+      flex-direction: row;
+      width: 100%;
+      padding-left: 90px;
+    }
+
+    &--name {
+      width: 100%;
+      padding-left: 125px;
+      padding-top: 29px;
+    }
+
+    &--phone {
+      width: 100%;
+      padding-left: 135px;
+      padding-top: 60px;
+    }
+
+    &--email {
+      width: 100%;
+      padding-left: 109px;
+    }
+
+    &--wishes {
+      width: 100%;
+      padding-left: 128px;
+      padding-top: 16px;
+    }
+  }
+
+  .knitting-form__name-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 18px;
+  }
+
+  .knitting-form__input {
+    padding-left: 17px;
+
+    &:checked + .knitting-form__label--radio::after {
+      top: 50%;
+      left: -64px;
+      width: 20px;
+      height: 20px;
+      transform: translateY(-50%);
+    }
+
+    &:checked + .knitting-form__label--checkbox::after {
+      top: 0;
+      left: -70px;
+      width: 33px;
+      height: 24px;
+      background-size: cover;
+      background-position: 2px 0;
+    }
+
+    &::-webkit-input-placeholder {
+      font-size: 19px;
+    }
+
+    &::-moz-placeholder {
+      font-size: 19px;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 19px;
+    }
+
+    &--name {
+      padding-top: 0;
+      flex-grow: 1;
+    }
+
+    &--wishes {
+      margin-top: 0;
+      font-size: 19px;
+    }
+  }
+
+  .knitting-form__label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 19px;
+    padding: 0;
+    margin: 0;
+
+    &--radio:first-of-type {
+      margin-top: 17px;
+    }
+
+    &--radio:not(:last-child) {
+      margin-bottom: 58px;
+    }
+
+    &--radio::before {
+      top: -16px;
+      left: -80px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &--checkbox {
+      box-sizing: border-box;
+      margin: 0;
+      width: 130px;
+      margin-bottom: 58px;
+    }
+
+    &--checkbox:nth-of-type(odd) {
+      margin-left: 113px;
+    }
+
+    &--checkbox:nth-of-type(even) {
+      margin-left: 131px;
+    }
+
+    &--checkbox::before {
+      top: -15px;
+      left: -79px;
+      width: 49px;
+      height: 49px;
+    }
+
+    &--text {
+      margin-right: 25px;
+    }
+  }
+
+  .knitting-form__icon {
+    &--phone {
+      top: 62px;
+      right: 75px;
+    }
+
+    &--email {
+      right: 72px;
+    }
+  }
+
+  .knitting-form__notice {
+    font-size: 17px;
+    line-height: 30px;
+    align-self: flex-end;
+    margin-top: 60px;
+  }
+
+  .knitting-form__button {
+    width: 230px;
+    margin-top: -38px;
+    margin-left: 50px;
+    z-index: 1;
+  }
 }
