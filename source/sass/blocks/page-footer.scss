@@ -15,8 +15,9 @@
   }
 
   &:active {
-    fill: #46c1ae;
     opacity: 0.3;
+
+    fill: #46c1ae;
   }
 }
 
@@ -31,9 +32,9 @@
 }
 
 .page-footer__social-item {
-  padding: 10px;
   margin-right: 6px;
   margin-left: 6px;
+  padding: 10px;
 }
 
 .page-footer__social-link {
@@ -85,7 +86,7 @@
 }
 
 @media (min-width: 768px) {
-  .page-footer{
+  .page-footer {
     margin-top: 17px;
     padding-top: 32px;
 
@@ -101,9 +102,10 @@
     }
 
     &__social-list {
-      border-bottom: none;
+      margin-right: 54px;
       padding-top: 12px;
-      margin-right:54px;
+
+      border-bottom: none;
     }
 
     &__copyright {
@@ -117,8 +119,8 @@
     margin-top: 63px;
 
     &__logo {
-      margin-left: -5px;
       margin-right: 325px;
+      margin-left: -5px;
     }
 
     &__social-list {

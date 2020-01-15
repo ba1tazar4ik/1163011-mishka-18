@@ -5,16 +5,18 @@
   justify-content: center;
   padding-top: 27px;
   padding-bottom: 42px;
+
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-position-y: bottom;
   background-position-x: right;
+  background-position-y: bottom;
   background-size: auto 7px;
 }
 
 @media (min-width: 768px) {
   .featured-products {
     padding-bottom: 65px;
+
     background-size: auto 15px;
   }
 }
@@ -22,8 +24,9 @@
 @media (min-width: 1150px) {
   .featured-products {
     padding-bottom: 95px;
-    background-size: 1050px 23px;
-    background-position-x: center;
+
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 1050px 23px;
   }
 }

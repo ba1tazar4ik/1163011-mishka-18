@@ -36,7 +36,7 @@
   }
 }
 
-.knitting-form__fieldset-inner {}
+
 
 .knitting-form__title {
   display: flex;
@@ -64,8 +64,9 @@
 }
 
 .knitting-form__title-wrapper {
-  white-space: nowrap;
   padding-right: 20px;
+
+  white-space: nowrap;
 
   &--type {
     padding-right: 25px;
@@ -88,11 +89,11 @@
 
 .knitting-form__input {
   display: block;
+  height: 18px;
 
   font-weight: 400;
   font-size: 19px;
   line-height: 18px;
-  height: 18px;
   color: $black-soft-color;
 
   background-color: transparent;
@@ -179,15 +180,17 @@
 
   &--phone {
     height: 19px;
-    line-height: 19px;
     padding-top: 7px;
     padding-bottom: 17px;
+
+    line-height: 19px;
   }
 
   &--email {
-    line-height: 19px;
     padding-top: 7px;
     padding-bottom: 19px;
+
+    line-height: 19px;
   }
 
   &--wishes {
@@ -218,6 +221,7 @@
   font-size: 17px;
   line-height: 18px;
   color: $text-dark;
+
   cursor: pointer;
 
   &--radio {
@@ -326,8 +330,8 @@
 
 .knitting-form__button {
   margin-top: 31px;
-  padding-left: 45px;
   padding-right: 45px;
+  padding-left: 45px;
 }
 
 @media (min-width: 768px) {
@@ -341,32 +345,35 @@
     flex-wrap: wrap;
 
     &--color {
-      background-color: #f1f1f1;
       margin-top: 55px;
       padding-top: 63px;
       padding-bottom: 10px;
+
+      background-color: #f1f1f1;
     }
 
     &--phone {
-      background-color: #f1f1f1;
       margin-top: 25px;
+
+      background-color: #f1f1f1;
     }
 
     &--email {
-      background-color: #f1f1f1;
       margin-top: 0;
       padding-top: 32px;
       padding-bottom: 50px;
+
+      background-color: #f1f1f1;
     }
   }
 
   .knitting-form__fieldset-inner {
-    max-width: 668px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     align-items: flex-start;
+    width: 100%;
+    max-width: 668px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   .knitting-form__title {
@@ -407,8 +414,8 @@
     flex-wrap: wrap;
 
     &--type {
-      padding-left: 209px;
       padding-top: 33px;
+      padding-left: 209px;
     }
 
     &--color {
@@ -419,14 +426,14 @@
 
     &--name {
       width: 100%;
-      padding-left: 125px;
       padding-top: 29px;
+      padding-left: 125px;
     }
 
     &--phone {
       width: 100%;
-      padding-left: 135px;
       padding-top: 60px;
+      padding-left: 135px;
     }
 
     &--email {
@@ -436,8 +443,8 @@
 
     &--wishes {
       width: 100%;
-      padding-left: 128px;
       padding-top: 16px;
+      padding-left: 128px;
     }
   }
 
@@ -453,18 +460,22 @@
     &:checked + .knitting-form__label--radio::after {
       top: 50%;
       left: -64px;
+
       width: 20px;
       height: 20px;
+
       transform: translateY(-50%);
     }
 
     &:checked + .knitting-form__label--checkbox::after {
       top: 0;
       left: -70px;
+
       width: 33px;
       height: 24px;
-      background-size: cover;
+
       background-position: 2px 0;
+      background-size: cover;
     }
 
     &::-webkit-input-placeholder {
@@ -480,12 +491,13 @@
     }
 
     &--name {
-      padding-top: 0;
       flex-grow: 1;
+      padding-top: 0;
     }
 
     &--wishes {
       margin-top: 0;
+
       font-size: 19px;
     }
   }
@@ -493,9 +505,10 @@
   .knitting-form__label {
     display: inline-flex;
     align-items: center;
-    font-size: 19px;
-    padding: 0;
     margin: 0;
+    padding: 0;
+
+    font-size: 19px;
 
     &--radio:first-of-type {
       margin-top: 17px;
@@ -508,14 +521,15 @@
     &--radio::before {
       top: -16px;
       left: -80px;
+
       width: 48px;
       height: 48px;
     }
 
     &--checkbox {
       box-sizing: border-box;
-      margin: 0;
       width: 130px;
+      margin: 0;
       margin-bottom: 58px;
     }
 
@@ -530,6 +544,7 @@
     &--checkbox::before {
       top: -15px;
       left: -79px;
+
       width: 49px;
       height: 49px;
     }
@@ -551,17 +566,19 @@
   }
 
   .knitting-form__notice {
-    font-size: 17px;
-    line-height: 30px;
     align-self: flex-end;
     margin-top: 60px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .knitting-form__button {
-    margin-top: -38px;
     z-index: 1;
-    padding-left: 29px;
+
+    margin-top: -38px;
     padding-right: 29px;
+    padding-left: 29px;
   }
 }
 
@@ -600,8 +617,8 @@
     }
 
     &--email {
-      margin-left: 7px;
       margin-top: 12px;
+      margin-left: 7px;
     }
 
     &--wishes {
@@ -624,18 +641,18 @@
 
     &--phone {
       padding-top: 59px;
-      padding-left: 82px;
       padding-right: 120px;
+      padding-left: 82px;
     }
 
     &--email {
-      padding-left: 55px;
       padding-right: 120px;
+      padding-left: 55px;
     }
 
     &--wishes {
-      padding-left: 75px;
       padding-right: 120px;
+      padding-left: 75px;
     }
   }
 
@@ -663,17 +680,17 @@
   }
 
   .knitting-form__label--checkbox:nth-of-type(2),
-  .knitting-form__label--checkbox:nth-of-type(5){
+  .knitting-form__label--checkbox:nth-of-type(5) {
     margin-left: 132px;
   }
 
   .knitting-form__label--checkbox:nth-of-type(3),
-  .knitting-form__label--checkbox:nth-of-type(6){
+  .knitting-form__label--checkbox:nth-of-type(6) {
     margin-left: 134px;
   }
 
   .knitting-form__icon {
-    &--phone{
+    &--phone {
       right: 232px;
     }
 

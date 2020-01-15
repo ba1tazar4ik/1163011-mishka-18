@@ -88,25 +88,28 @@
 @media (min-width: 768px) {
   .page-nav {
     position: relative;
-    width:auto;
+
+    width: auto;
+
     background-color: #f8f8f8;
 
     &__list {
       flex-direction: row;
       max-width: 768px;
-      padding-left: 50px;
-      padding-right: 50px;
       margin: 0 auto;
+      padding-right: 50px;
+      padding-left: 50px;
     }
 
     &__item {
-      padding-left: 15px;
       padding-top: 10px;
       padding-bottom: 8px;
+      padding-left: 15px;
     }
 
     &__link {
       padding: 20px;
+
       line-height: 30px;
 
       &--interior::after {
@@ -124,8 +127,10 @@
       position: absolute;
       bottom: -14px;
       left: 0;
-      height: 25px;
+
       width: 100%;
+      height: 25px;
+
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: contain;
@@ -140,13 +145,14 @@
     }
 
     &__link {
-      padding-left: 20px;
       padding-top: 15px;
       padding-bottom: 30px;
+      padding-left: 20px;
     }
 
     &::after {
       bottom: -12px;
+
       height: 34px;
     }
   }

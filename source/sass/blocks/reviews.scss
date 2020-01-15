@@ -61,11 +61,12 @@
 @media (min-width: 768px) {
   .reviews {
     margin-top: -24px;
+
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
     background-position-x: left;
     background-position-y: top;
+    background-size: auto;
 
     &::after {
       height: 15px;
@@ -78,20 +79,22 @@
 
     &__block-text {
       margin-top: 48px;
+
       font-size: 17px;
     }
 
     &__block-name {
-      font-size: 18px;
       margin-top: 58px;
+
+      font-size: 18px;
     }
 
     &__button {
       box-sizing: border-box;
       width: 175px;
-      margin-left:493px;
       margin-top: -330px;
       margin-bottom: 360px;
+      margin-left: 493px;
       padding: 14px;
     }
   }
@@ -100,8 +103,8 @@
 @media (min-width: 1150px) {
   .reviews {
     margin-top: -19px;
-    margin-left: 50px;
     margin-right: 50px;
+    margin-left: 50px;
 
     &::after {
       height: 23px;
@@ -121,13 +124,14 @@
     }
 
     &__block-name {
-      font-size: 17px;
       margin-top: 40px;
+
+      font-size: 17px;
     }
 
     &__button {
-      margin-left: 699px;
       margin-top: -280px;
+      margin-left: 699px;
     }
   }
 }

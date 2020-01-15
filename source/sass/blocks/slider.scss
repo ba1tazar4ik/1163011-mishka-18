@@ -56,17 +56,18 @@
 
 @media (min-width: 768px) {
   .slider__nav {
-    border: none;
     width: 140px;
-    margin-left: 510px;
     margin-top: -52px;
+    margin-left: 510px;
+
+    border: none;
   }
 
   .slider__arrow {
-    padding: 10px;
-    margin-left: 9px;
-    margin-right: 9px;
     width: auto;
+    margin-right: 9px;
+    margin-left: 9px;
+    padding: 10px;
   }
 
   .slider__arrow--devider::after {
@@ -75,9 +76,9 @@
 }
 
 @media (min-width: 1150px) {
-  .slider{
+  .slider {
     &__nav {
-    margin-left: 715px;
+      margin-left: 715px;
     }
   }
 }

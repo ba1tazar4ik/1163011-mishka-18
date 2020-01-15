@@ -93,10 +93,10 @@
   .promo-video {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px;
     margin-top: 53px;
+    margin-right: 50px;
     margin-bottom: 63px;
+    margin-left: 50px;
     padding-bottom: 45px;
 
     &__title {
@@ -113,6 +113,7 @@
     &__media {
       order: 1;
       height: 455px;
+
       background-image: url("../img/video-tablet@1x.jpg");
     }
 
@@ -121,17 +122,18 @@
     }
 
     &__text {
+      margin-top: 7px;
+      margin-bottom: 36px;
+      margin-left: 5px;
+      padding-right: 13px;
+
       font-size: 15px;
       line-height: 30px;
-      margin-top: 7px;
-      margin-left: 5px;
-      margin-bottom: 36px;
-      padding-right: 13px;
     }
 
     &__button {
-      margin-left: 8px;
       margin-right: 8px;
+      margin-left: 8px;
     }
   }
 }
@@ -139,19 +141,21 @@
 @media (min-width: 1150px) {
   .promo-video {
     position: relative;
-    padding-bottom: 0;
+
+    flex-direction: row;
+    width: 1048px;
     margin: 0 auto;
     margin-top: 57px;
-    flex-direction: row;
     margin-bottom: 105px;
-    width: 1048px;
+    padding-bottom: 0;
 
     &__title {
       position: absolute;
-      right: 39px;
       top: 95px;
-      margin: 0;
+      right: 39px;
+
       width: 230px;
+      margin: 0;
 
       &::before {
         top: -48px;
@@ -160,8 +164,9 @@
     }
 
     &__media {
-      width: 682px;
       flex-shrink: 0;
+      width: 682px;
+
       background-image: url("../img/video-desktop@1x.jpg");
     }
 
@@ -173,14 +178,14 @@
     }
 
     &__text {
-      padding-left: 37px;
       margin-bottom: 47px;
+      padding-left: 37px;
     }
 
     &__button {
-      margin-left: 45px;
       margin-right: 22px;
       margin-bottom: 60px;
+      margin-left: 45px;
     }
   }
 }
