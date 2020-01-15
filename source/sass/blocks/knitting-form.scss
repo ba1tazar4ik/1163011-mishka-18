@@ -326,6 +326,8 @@
 
 .knitting-form__button {
   margin-top: 31px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 @media (min-width: 768px) {
@@ -556,9 +558,137 @@
   }
 
   .knitting-form__button {
-    width: 230px;
     margin-top: -38px;
-    margin-left: 50px;
     z-index: 1;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .knitting-form__fieldset {
+    &--color {
+      margin-top: 52px;
+      padding-top: 64px;
+    }
+
+    &--phone {
+      margin-top: 28px;
+    }
+  }
+
+  .knitting-form__fieldset-inner {
+    max-width: 940px;
+  }
+
+  .knitting-form__title {
+    &--type {
+      margin-top: 50px;
+      margin-left: 8px;
+    }
+
+    &--color {
+      margin-left: 5px;
+    }
+
+    &--name {
+      margin-left: 6px;
+    }
+
+    &--phone {
+      margin-left: 6px;
+    }
+
+    &--email {
+      margin-left: 7px;
+      margin-top: 12px;
+    }
+
+    &--wishes {
+      margin-left: 7px;
+    }
+  }
+
+  .knitting-form__controls {
+    &--type {
+      padding-left: 155px;
+    }
+
+    &--color {
+      padding-left: 0;
+    }
+
+    &--name {
+      padding-left: 72px;
+    }
+
+    &--phone {
+      padding-top: 59px;
+      padding-left: 82px;
+      padding-right: 120px;
+    }
+
+    &--email {
+      padding-left: 55px;
+      padding-right: 120px;
+    }
+
+    &--wishes {
+      padding-left: 75px;
+      padding-right: 120px;
+    }
+  }
+
+  .knitting-form__name-wrapper {
+    margin-right: 120px;
+  }
+
+  .knitting-form__name-wrapper:not(first-of-type) {
+    margin-top: 17px;
+  }
+
+  .knitting-form__label {
+    &--checkbox:nth-of-type(odd) {
+      margin-left: 0;
+    }
+
+    &--checkbox:nth-of-type(even) {
+      margin-left: 0;
+    }
+  }
+
+  .knitting-form__label--checkbox:nth-of-type(1),
+  .knitting-form__label--checkbox:nth-of-type(4) {
+    margin-left: 151px;
+  }
+
+  .knitting-form__label--checkbox:nth-of-type(2),
+  .knitting-form__label--checkbox:nth-of-type(5){
+    margin-left: 132px;
+  }
+
+  .knitting-form__label--checkbox:nth-of-type(3),
+  .knitting-form__label--checkbox:nth-of-type(6){
+    margin-left: 134px;
+  }
+
+  .knitting-form__icon {
+    &--phone{
+      right: 232px;
+    }
+
+    &--email {
+      right: 229px;
+    }
+  }
+
+  .knitting-form__notice {
+    margin-top: 58px;
+  }
+
+  .knitting-form__button {
+    box-sizing: border-box;
+    margin-top: -40px;
+    margin-left: 120px;
   }
 }

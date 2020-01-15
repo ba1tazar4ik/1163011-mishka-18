@@ -2,7 +2,6 @@
   padding-top: 24px;
 
   font-size: 13px;
-  color: red;
 }
 
 @media (min-width: 768px) {
@@ -12,5 +11,14 @@
     padding-top: 70px;
     max-width: 768px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .knitting-form-text {
+    max-width: 1150px;
+    padding-top: 128px;
+    padding-left: 225px;
+    padding-right: 200px;
   }
 }
