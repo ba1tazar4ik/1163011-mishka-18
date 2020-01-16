@@ -432,11 +432,13 @@
       width: 100%;
       padding-top: 60px;
       padding-left: 135px;
+      position: relative;
     }
 
     &--email {
       width: 100%;
       padding-left: 109px;
+      position: relative;
     }
 
     &--wishes {
@@ -555,11 +557,12 @@
   .knitting-form__icon {
     &--phone {
       top: 62px;
-      right: 75px;
+      right: 25px;
     }
 
     &--email {
-      right: 72px;
+      top: 3px;
+      right: 22px;
     }
   }
 
@@ -686,11 +689,11 @@
 
   .knitting-form__icon {
     &--phone {
-      right: 232px;
+      right: 129px;
     }
 
     &--email {
-      right: 229px;
+      right: 125px;
     }
   }
 
