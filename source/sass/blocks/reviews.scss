@@ -60,6 +60,9 @@
 
 @media (min-width: 768px) {
   .reviews {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
     margin-top: -24px;
 
     background-image: url("../img/review@1x.jpg");
@@ -102,9 +105,10 @@
 
 @media (min-width: 1150px) {
   .reviews {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
     margin-top: -19px;
-    margin-right: 50px;
-    margin-left: 50px;
 
     &::after {
       height: 23px;

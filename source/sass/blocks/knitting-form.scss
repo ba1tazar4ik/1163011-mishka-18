@@ -429,12 +429,16 @@
     }
 
     &--phone {
+      position: relative;
+
       width: 100%;
       padding-top: 60px;
       padding-left: 135px;
     }
 
     &--email {
+      position: relative;
+
       width: 100%;
       padding-left: 109px;
     }
@@ -555,11 +559,12 @@
   .knitting-form__icon {
     &--phone {
       top: 62px;
-      right: 75px;
+      right: 25px;
     }
 
     &--email {
-      right: 72px;
+      top: 3px;
+      right: 22px;
     }
   }
 
@@ -655,8 +660,8 @@
   }
 
   .knitting-form__name-wrapper {
-    margin-right: 120px;
     margin-top: 17px;
+    margin-right: 120px;
   }
 
   .knitting-form__label {
@@ -686,11 +691,11 @@
 
   .knitting-form__icon {
     &--phone {
-      right: 232px;
+      right: 129px;
     }
 
     &--email {
-      right: 229px;
+      right: 125px;
     }
   }
 
