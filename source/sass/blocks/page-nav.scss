@@ -1,3 +1,7 @@
+.page-nav {
+  width: 100%;
+}
+
 .page-nav__list {
   display: flex;
   flex-direction: column;
@@ -32,7 +36,6 @@
   position: relative;
 
   display: flex;
-  width: 100%;
   padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 27px;
@@ -62,7 +65,7 @@
 
 .page-nav__link--interior::after {
   top: 23px;
-  right: 64px;
+  right: 34px;
 
   width: 40px;
   height: 62px;
@@ -73,11 +76,84 @@
 
 .page-nav__link--toy::after {
   top: 22px;
-  right: 54px;
+  right: 24px;
 
   width: 60px;
   height: 60px;
 
   background-image: url("../../img/icon-toy.svg");
   background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .page-nav {
+    position: relative;
+
+    width: auto;
+
+    background-color: #f8f8f8;
+
+    &__list {
+      flex-direction: row;
+      max-width: 768px;
+      margin: 0 auto;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    &__item {
+      padding-top: 10px;
+      padding-bottom: 8px;
+      padding-left: 15px;
+    }
+
+    &__link {
+      padding: 20px;
+
+      line-height: 30px;
+
+      &--interior::after {
+        top: 21px;
+        right: 36px;
+      }
+
+      &--toy::after {
+        right: 36px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+
+      width: 100%;
+      height: 25px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-nav {
+    &__list {
+      max-width: 1150px;
+    }
+
+    &__link {
+      padding-top: 15px;
+      padding-bottom: 30px;
+      padding-left: 20px;
+    }
+
+    &::after {
+      bottom: -12px;
+
+      height: 34px;
+    }
+  }
 }

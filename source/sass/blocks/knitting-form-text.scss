@@ -3,3 +3,23 @@
 
   font-size: 13px;
 }
+
+@media (min-width: 768px) {
+  .knitting-form-text {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-top: 70px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .knitting-form-text {
+    max-width: 1150px;
+    padding-top: 128px;
+    padding-right: 200px;
+    padding-left: 225px;
+  }
+}

@@ -25,13 +25,13 @@
   margin-top: 56px;
 }
 
-.review-block__text {
+.reviews__block-text {
   margin-top: 24px;
 
   line-height: 30px;
 }
 
-.review-block__name {
+.reviews__block-name {
   display: block;
   margin-top: 26px;
 
@@ -41,7 +41,7 @@
   color: $text-dark;
 }
 
-.review-block__nickname {
+.reviews__block-nickname {
   display: block;
   margin-top: 3px;
 
@@ -51,60 +51,87 @@
   color: $black-soft-color;
 }
 
-.slider__nav {
-  display: flex;
-  justify-content: center;
-  height: 50px;
-  margin-top: 30px;
-
-  border: 1px solid $border-grey;
-}
-
-.slider__arrow {
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-  fill: $text-dark;
-
-  &:hover,
-  &:focus {
-    fill: $text-hover-color;
-  }
-
-  &:active {
-    fill: $text-down-color;
-  }
-}
-
-.slider__arrow--devider::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 1px;
-  height: 50px;
-
-  background-color: $border-grey;
-}
-
-
-.slider__arrow-img {
-  width: 50px;
-  height: 26px;
-}
-
-.review__button {
+.reviews__button {
   display: block;
   margin-top: 38px;
 
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    margin-top: -24px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: auto;
+
+    &::after {
+      height: 15px;
+    }
+
+    &__title {
+      margin-top: 75px;
+      margin-left: -4px;
+    }
+
+    &__block-text {
+      margin-top: 48px;
+
+      font-size: 17px;
+    }
+
+    &__block-name {
+      margin-top: 58px;
+
+      font-size: 18px;
+    }
+
+    &__button {
+      box-sizing: border-box;
+      width: 175px;
+      margin-top: -330px;
+      margin-bottom: 360px;
+      margin-left: 493px;
+      padding: 14px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews {
+    margin-top: -19px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+    &::after {
+      height: 23px;
+    }
+
+    &__inner {
+      padding: 0;
+      padding-left: 175px;
+    }
+
+    &__title {
+      margin-top: 73px;
+    }
+
+    &__block-text {
+      padding-right: 100px;
+    }
+
+    &__block-name {
+      margin-top: 40px;
+
+      font-size: 17px;
+    }
+
+    &__button {
+      margin-top: -280px;
+      margin-left: 699px;
+    }
+  }
 }

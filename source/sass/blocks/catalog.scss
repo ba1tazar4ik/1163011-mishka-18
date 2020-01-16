@@ -7,3 +7,31 @@
   flex-direction: column;
   margin-top: 30px;
 }
+
+@media (min-width: 768px) {
+  .catalog {
+    padding-top: 27px;
+
+    &__item {
+      flex-direction: row;
+      margin-top: 53px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+
+    &__item {
+      flex-direction: column;
+      width: 316px;
+      margin-top: 108px;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+}

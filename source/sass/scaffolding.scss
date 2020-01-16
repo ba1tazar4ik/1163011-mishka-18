@@ -1,45 +1,47 @@
 @font-face {
-  font-style: normal;
   font-weight: 400;
   font-family: "Open Sans";
+  font-style: normal;
 
   font-display: swap;
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
-  font-style: normal;
   font-weight: 700;
   font-family: "Open Sans";
+  font-style: normal;
 
   font-display: swap;
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
 body {
-  width: 320px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 0;
 
-  font-style: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   font-family: "Open Sans", sans-serif;
-  color: $text-dark;
+  color: $black-soft-color;
+  font-style: normal;
 
   background-color: $bg-white;
-  // background-image: url("../img/83-layers.png");
-  // background-position: center top;
-  // background-repeat: no-repeat;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 ul {
@@ -74,7 +76,6 @@ h3 {
   clip-path: inset(100%);
 }
 
-.padding-container {
-  padding-right: 30px;
-  padding-left: 30px;
-}
+//* {
+//  border: 1px solid red;
+//}
