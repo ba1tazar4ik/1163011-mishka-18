@@ -6,7 +6,7 @@
   padding-top: 27px;
   padding-bottom: 42px;
 
-  background-image: url("../img/bg-zigzag-line.svg");
+  background-image: url("/img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position-x: right;
   background-position-y: bottom;
@@ -23,7 +23,7 @@
 
 @media (min-width: 1150px) {
   .featured-products {
-    padding-bottom: 95px;
+    padding-bottom: 90px;
 
     background-repeat: no-repeat;
     background-position-x: center;

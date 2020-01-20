@@ -190,16 +190,7 @@
     }
 
     &__img {
-      width: 50%;
       margin-top: 57px;
-
-      &--mobile {
-        display: none;
-      }
-
-      &--tablet {
-        display: block;
-      }
     }
 
     &__order {
@@ -288,6 +279,10 @@
 
     &__description--catalog-page {
       padding-bottom: 15px;
+    }
+
+    &__cost{
+      margin-top: -6px;
     }
 
     &__cost--catalog-page {

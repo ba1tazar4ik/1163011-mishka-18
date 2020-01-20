@@ -160,9 +160,14 @@
             </tr>
           </table>
         </div>
-        <img class="product-card__img product-card__img--mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото вязаных корзиночек">
-        <img class="product-card__img product-card__img--tablet" src="img/triple-set-tablet@1x.jpg"  width="333" height="404" alt="фото вязаных корзиночек">
-        <img class="product-card__img product-card__img--desktop" src="img/triple-set-desktop@1x.jpg"  width="525" height="636" alt="фото вязаных корзиночек">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="product-card__img product-card__img--mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото вязаных корзиночек">
+        </picture>
+<!--        <img class="product-card__img product-card__img&#45;&#45;mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото вязаных корзиночек">-->
+<!--        <img class="product-card__img product-card__img&#45;&#45;tablet" src="img/triple-set-tablet@1x.jpg"  width="333" height="404" alt="фото вязаных корзиночек">-->
+<!--        <img class="product-card__img product-card__img&#45;&#45;desktop" src="img/triple-set-desktop@1x.jpg"  width="525" height="636" alt="фото вязаных корзиночек">-->
         <div class="product-card__order">
           <p class="product-card__cost">Цена: 990 руб.</p>
           <button class="site-button product-card__button" type="button">Заказать</button>
@@ -235,9 +240,7 @@
         </div>
       </div>
       <div class="site-contacts__map">
-        <img class="site-contacts__map-img--mobile" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая<br>Конюшенная, д. 19/8, офис 101">
-        <img class="site-contacts__map-img--tablet" src="img/map-tablet@1x.jpg" alt="г. Санкт-Петербург, ул. Большая<br>Конюшенная, д. 19/8, офис 101">
-        <img class="site-contacts__map-img--desktop" src="img/map-desktop@1x.jpg" alt="г. Санкт-Петербург, ул. Большая<br>Конюшенная, д. 19/8, офис 101">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5ff43ca1dfa790c0f259ec7007a2894c7d401eb35659fbbbba1d959ae49a3db7&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
       </div>
       <a class="site-button site-contacts__button" href="#" >Напишите нам</a>
     </section>
