@@ -1,15 +1,15 @@
-.catalog {
+.site-catalog {
   padding-top: 2px;
 }
 
-.catalog__item {
+.site-catalog__item {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
 
 @media (min-width: 768px) {
-  .catalog {
+  .site-catalog {
     padding-top: 27px;
 
     &__item {
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: 1150px) {
-  .catalog {
+  .site-catalog {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

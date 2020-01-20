@@ -1,4 +1,4 @@
-.modal {
+.site-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,10 +12,10 @@
   background-color: rgba($bg-white, 0.9);
 }
 
-.modal__fieldset {
+.site-modal__fieldset {
   border: none;
 }
 
-.modal__button {
+.site-modal__button {
   width: 260px;
 }
