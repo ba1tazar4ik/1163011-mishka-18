@@ -163,11 +163,9 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <source media="(min-width: 320px)" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x">
           <img class="product-card__img product-card__img--mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото вязаных корзиночек">
         </picture>
-<!--        <img class="product-card__img product-card__img&#45;&#45;mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото вязаных корзиночек">-->
-<!--        <img class="product-card__img product-card__img&#45;&#45;tablet" src="img/triple-set-tablet@1x.jpg"  width="333" height="404" alt="фото вязаных корзиночек">-->
-<!--        <img class="product-card__img product-card__img&#45;&#45;desktop" src="img/triple-set-desktop@1x.jpg"  width="525" height="636" alt="фото вязаных корзиночек">-->
         <div class="product-card__order">
           <p class="product-card__cost">Цена: 990 руб.</p>
           <button class="site-button product-card__button" type="button">Заказать</button>
@@ -307,8 +305,8 @@
     </div>
   </footer>
   <section class="site-modal">
-    <form class="size-select site-modal__form padding-container" action="https://echo.htmlacademy.ru" method="post" name="select-form">
-      <h2 class="size-select__title main-title">Добавить<br>в корзину</h2>
+    <form class="size-select site-modal__form" action="https://echo.htmlacademy.ru" method="post" name="select-form">
+      <h2 class="size-select__title main-title">Добавить в корзину</h2>
       <p class="size-select__mark">Выберите размер:</p>
       <div class="site-modal__fieldset">
         <input class="size-select__input visually-hidden" type="radio" id="size-S" name="size" value="S" checked>
@@ -321,5 +319,6 @@
       <button class="site-button site-modal__button button--aquamarine">Добавить</button>
     </form>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
