@@ -10,12 +10,43 @@
   height: 100vh;
 
   background-color: rgba($bg-white, 0.9);
+
+  &--show {
+    display: block;
+  }
 }
 
 .site-modal__fieldset {
   border: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 23px;
+  margin-bottom: 31px;
 }
 
 .site-modal__button {
   width: 260px;
+  color: $text-light;
+  background-color: $green-color;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: #56c3b2;
+  }
+
+  &:active {
+    color: rgba($text-light, 0.3);
+
+    background-color: #56c3b2;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-modal__button {
+    width: 350px;
+  }
 }

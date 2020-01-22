@@ -1,7 +1,7 @@
 .site-contacts {
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 
 .site-contacts__title {
@@ -41,12 +41,15 @@
 }
 
 .site-contacts__map {
+  margin: 0 auto;
   margin-top: 38px;
-
-  &-img--tablet,
-  &-img--desktop {
-    display: none;
-  }
+  height: 457px;
+  max-width: 320px;
+  width: 100%;
+  background-image: url("/img/icon-map-pin.svg"), url("/img/map-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 67px 100px, auto 457px;
+  background-position: 139px 146px, center center;
 }
 
 .site-contacts__button {
@@ -89,8 +92,15 @@
   }
 }
 
+@media (min-resolution: 1.5dppx) {
+  .site-contacts__map {
+    background-image: url("/img/icon-map-pin.svg"), url("/img/map-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: 768px) {
   .site-contacts {
+    padding-bottom: 39px;
     &__wrapper {
       width: 100%;
       margin: 0 auto;
@@ -113,13 +123,13 @@
         width: 47px;
         height: 81px;
 
-        background-image: url("../img/icon-flag.svg");
+        background-image: url("/img/icon-flag.svg");
       }
     }
 
     &__text {
       flex-direction: row;
-      margin-top: 50px;
+      margin-top: 48px;
 
       & ul:first-child {
         padding-right: 50px;
@@ -131,19 +141,10 @@
     }
 
     &__map {
+      max-width: 768px;
       margin-top: 56px;
-
-      &-img--mobile {
-        display: none;
-      }
-
-      &-img--tablet {
-        display: block;
-      }
-
-      &-img--desktop {
-        display: none;
-      }
+      background-image: url("/img/icon-map-pin.svg"), url("/img/map-tablet@1x.jpg");
+      background-position: 363px 139px, center center;
     }
 
     &__button {
@@ -165,6 +166,11 @@
 
     font-size: 17px;
   }
+  @media (min-resolution: 1.5dppx) {
+    .site-contacts__map {
+      background-image: url("/img/icon-map-pin.svg"), url("/img/map-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: 1150px) {
@@ -174,9 +180,13 @@
     flex-wrap: wrap;
     max-width: 1150px;
     margin: 0 auto;
+    padding-bottom: 41px;
+    padding-right: 50px;
 
     &__wrapper {
       width: 50%;
+      padding-right: 0;
+      padding-left: 43px;
     }
 
     &__title {
@@ -194,6 +204,7 @@
     &__text {
       flex-direction: column;
       padding-left: 175px;
+      margin-top: 50px;
 
       &--padding-address {
         padding-top: 26px;
@@ -202,9 +213,12 @@
 
     &__map {
       box-sizing: border-box;
-      width: 50%;
+      width: 525px;
       margin-top: 75px;
-      padding-right: 50px;
+      margin-left: 15px;
+      background-image: url("/img/icon-map-pin.svg"), url("/img/map-desktop@1x.jpg");
+      background-size: 67px 100px, 525px auto;
+      background-position: 237px 148px, center center;
 
       &-img--mobile {
         display: none;
@@ -230,5 +244,11 @@
 
   .site-contacts__text ul:first-child {
     padding-right: 0;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .site-contacts__map {
+      background-image: url("/img/icon-map-pin.svg"), url("/img/map-desktop@2x.jpg");
+    }
   }
 }

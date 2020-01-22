@@ -160,9 +160,12 @@
             </tr>
           </table>
         </div>
-        <img class="product-card__img product-card__img--mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото вязаных корзиночек">
-        <img class="product-card__img product-card__img--tablet" src="img/triple-set-tablet@1x.jpg"  width="333" height="404" alt="фото вязаных корзиночек">
-        <img class="product-card__img product-card__img--desktop" src="img/triple-set-desktop@1x.jpg"  width="525" height="636" alt="фото вязаных корзиночек">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <source media="(min-width: 320px)" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x">
+          <img class="product-card__img product-card__img--mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото вязаных корзиночек">
+        </picture>
         <div class="product-card__order">
           <p class="product-card__cost">Цена: 990 руб.</p>
           <button class="site-button product-card__button" type="button">Заказать</button>
@@ -235,9 +238,7 @@
         </div>
       </div>
       <div class="site-contacts__map">
-        <img class="site-contacts__map-img--mobile" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая<br>Конюшенная, д. 19/8, офис 101">
-        <img class="site-contacts__map-img--tablet" src="img/map-tablet@1x.jpg" alt="г. Санкт-Петербург, ул. Большая<br>Конюшенная, д. 19/8, офис 101">
-        <img class="site-contacts__map-img--desktop" src="img/map-desktop@1x.jpg" alt="г. Санкт-Петербург, ул. Большая<br>Конюшенная, д. 19/8, офис 101">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5ff43ca1dfa790c0f259ec7007a2894c7d401eb35659fbbbba1d959ae49a3db7&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
       </div>
       <a class="site-button site-contacts__button" href="#" >Напишите нам</a>
     </section>
@@ -304,8 +305,8 @@
     </div>
   </footer>
   <section class="site-modal">
-    <form class="size-select site-modal__form padding-container" action="https://echo.htmlacademy.ru" method="post" name="select-form">
-      <h2 class="size-select__title main-title">Добавить<br>в корзину</h2>
+    <form class="size-select site-modal__form" action="https://echo.htmlacademy.ru" method="post" name="select-form">
+      <h2 class="size-select__title main-title">Добавить в корзину</h2>
       <p class="size-select__mark">Выберите размер:</p>
       <div class="site-modal__fieldset">
         <input class="size-select__input visually-hidden" type="radio" id="size-S" name="size" value="S" checked>
@@ -318,5 +319,6 @@
       <button class="site-button site-modal__button button--aquamarine">Добавить</button>
     </form>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>

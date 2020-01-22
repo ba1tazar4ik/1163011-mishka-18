@@ -46,6 +46,15 @@
   text-align: left;
   color: $text-light;
 
+  &:hover,
+  &:focus {
+    padding-bottom: 35px;
+  }
+
+  &:active {
+    padding-bottom: 35px;
+  }
+
   &:hover.page-nav__link::after,
   &:focus .page-nav__link::after {
     opacity: 0.7;
@@ -70,7 +79,7 @@
   width: 40px;
   height: 62px;
 
-  background-image: url("../../img/icon-interior.svg");
+  background-image: url("/img/icon-interior.svg");
   background-position: center center;
 }
 
@@ -81,7 +90,7 @@
   width: 60px;
   height: 60px;
 
-  background-image: url("../../img/icon-toy.svg");
+  background-image: url("/img/icon-toy.svg");
   background-position: center center;
 }
 
@@ -101,23 +110,21 @@
       padding-left: 50px;
     }
 
-    &__item {
-      padding-top: 10px;
-      padding-bottom: 8px;
-      padding-left: 15px;
-    }
-
     &__link {
-      padding: 20px;
+      padding-top: 30px;
+      padding-bottom: 28px;
+      padding-left: 35px;
+      padding-right: 20px;
 
       line-height: 30px;
 
       &--interior::after {
-        top: 21px;
+        top: 30px;
         right: 36px;
       }
 
       &--toy::after {
+        top: 32px;
         right: 36px;
       }
     }
@@ -131,7 +138,7 @@
       width: 100%;
       height: 25px;
 
-      background-image: url("../img/bg-zigzag-fill.svg");
+      background-image: url("/img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: contain;
     }
@@ -145,9 +152,9 @@
     }
 
     &__link {
-      padding-top: 15px;
-      padding-bottom: 30px;
-      padding-left: 20px;
+      padding-top: 27px;
+      padding-bottom: 36px;
+      padding-left: 36px;
     }
 
     &::after {
