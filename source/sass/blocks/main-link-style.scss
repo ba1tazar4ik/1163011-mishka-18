@@ -1,0 +1,10 @@
+.main-link-style {
+  &:hover,
+  &:focus {
+    color: $text-hover-color;
+  }
+
+  &:active {
+    color: $text-down-color;
+  }
+}

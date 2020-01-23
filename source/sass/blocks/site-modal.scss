@@ -17,21 +17,24 @@
 }
 
 .site-modal__fieldset {
-  border: none;
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 23px;
   margin-bottom: 31px;
+
+  border: none;
 }
 
 .site-modal__button {
   width: 260px;
-  color: $text-light;
-  background-color: $green-color;
-  border: none;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  color: $text-light;
+
+  background-color: $green-color;
+  border: none;
 
   &:hover,
   &:focus {

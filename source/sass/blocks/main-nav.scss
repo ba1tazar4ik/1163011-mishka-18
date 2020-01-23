@@ -79,14 +79,10 @@
 
   &:hover,
   &:focus {
-    color: $text-hover-color;
-
     fill: $green-color;
   }
 
   &:active {
-    color: $text-down-color;
-
     fill: $icon-down-color;
   }
 }

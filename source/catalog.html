@@ -88,13 +88,13 @@
             </a>
           </li>
           <li class="main-nav__item main-nav__item--catalog">
-            <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link main-nav__link--catalog main-link-style" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item main-nav__item--knitting">
-            <a class="main-nav__link main-nav__link--knitting" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link main-nav__link--knitting main-link-style" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link main-link-style" href="#">
               <svg class="main-nav__icon main-nav__icon--search" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6">
                 <path  d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
               </svg>
@@ -102,7 +102,7 @@
             </a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link main-link-style" href="#">
               <svg class="main-nav__icon main-nav__icon--cart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849">
                 <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
               </svg>
@@ -110,10 +110,10 @@
             </a>
           </li>
           <li class="main-nav__item main-nav__item--new">
-            <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
+            <a class="main-nav__link main-nav__link--new main-link-style" href="#">Новые поступления</a>
           </li>
           <li class="main-nav__item main-nav__item--sales">
-            <a class="main-nav__link main-nav__link--sales" href="#">Распродажа</a>
+            <a class="main-nav__link main-nav__link--sales main-link-style" href="#">Распродажа</a>
           </li>
           <li class="main-nav__item main-nav__item--delivery">
             <a class="main-nav__link--delivery">Бесплатная доставка по России</a>
@@ -127,14 +127,22 @@
     <h1 class="main-title main-title--regular-page">Каталог товаров</h1>
     <section class="site-catalog padding-container padding-container--catalog-page">
       <div class="site-catalog__item product-card">
-        <picture class="product-card__image-wrapper">
-          <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-hare-mobile@1x.jpg 1x, img/photo-hare-mobile@2x.jpg 2x">
-          <img class="product-card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="фото вязаных корзиночек">
-        </picture>
+        <a  class="product-card__image-wrapper" href="#">
+          <picture class="product-card__image-wrapper-inner--desktop">
+            <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+            <img class="product-card__image" src="img/photo-hare-desktop@1x.jpg" width="316" height="462" alt="фото зайчика-попргайчика">
+          </picture>
+          <picture class="product-card__image-wrapper-inner--tablet">
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+            <img class="product-card__image" src="img/photo-hare-tablet@1x.jpg" width="334" height="334" alt="фото зайчика-попргайчика">
+          </picture>
+          <picture class="product-card__image-wrapper-inner--mobile">
+            <source media="(min-width: 320px)" srcset="img/photo-hare-mobile@1x.jpg 1x, img/photo-hare-mobile@2x.jpg 2x">
+            <img class="product-card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="фото зайчика-попргайчика">
+          </picture>
+        </a>
         <div class="product-card__wrapper">
-          <h2 class="catalog-page-subtitle main-subtitle">Зайчик-попрыгайчик</h2>
+          <a class="catalog-page-subtitle main-subtitle main-link-style" href="#">Зайчик-попрыгайчик</a>
           <p class="product-card__description product-card__description--catalog-page main-text product-card__divider">Рост 30 см, вес 200 г</p>
           <p class="product-card__cost product-card__cost--catalog-page">1 200 руб.</p>
           <button class="product-card__button product-card__button--catalog-page">
@@ -146,14 +154,22 @@
         </div>
       </div>
       <div class="site-catalog__item product-card">
-        <picture class="product-card__image-wrapper">
-          <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-bowl-mobile@1x.jpg 1x, img/photo-bowl-mobile@2x.jpg 2x">
-          <img class="product-card__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="фото вязаной корзиночки">
-        </picture>
+        <a  class="product-card__image-wrapper" href="#">
+          <picture class="product-card__image-wrapper-inner--desktop">
+            <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+            <img class="product-card__image" src="img/photo-bowl-desktop@1x.jpg" width="316" height="462" alt="фото вязаной корзиночки">
+          </picture>
+          <picture class="product-card__image-wrapper-inner--tablet">
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+            <img class="product-card__image" src="img/photo-bowl-tablet@1x.jpg" width="334" height="334" alt="фото вязаной корзиночки">
+          </picture>
+          <picture class="product-card__image-wrapper-inner--mobile">
+            <source media="(min-width: 320px)" srcset="img/photo-bowl-mobile@1x.jpg 1x, img/photo-bowl-mobile@2x.jpg 2x">
+            <img class="product-card__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="фото вязаной корзиночки">
+          </picture>
+        </a>
         <div class="product-card__wrapper">
-          <h2 class="catalog-page-subtitle main-subtitle">Корзинка для белья</h2>
+          <a class="catalog-page-subtitle main-subtitle main-link-style" href="#">Корзинка для белья</a>
           <p class="product-card__description product-card__description--catalog-page main-text product-card__divider">Диаметр 15 см, высота 10 см</p>
           <p class="product-card__cost product-card__cost--catalog-page">690 руб.</p>
           <button class="product-card__button product-card__button--catalog-page">
@@ -165,14 +181,22 @@
         </div>
       </div>
       <div class="site-catalog__item product-card">
-        <picture class="product-card__image-wrapper">
-          <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-toys-mobile@1x.jpg 1x, img/photo-toys-mobile@2x.jpg 2x">
-          <img class="product-card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="фото корзинки для игрушек">
-        </picture>
+        <a  class="product-card__image-wrapper" href="#">
+          <picture class="product-card__image-wrapper-inner--desktop">
+            <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+            <img class="product-card__image" src="img/photo-toys-desktop@1x.jpg" width="316" height="462" alt="фото корзинки для игрушек">
+          </picture>
+          <picture class="product-card__image-wrapper-inner--tablet">
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <img class="product-card__image" src="img/photo-toys-tablet@1x.jpg" width="334" height="334" alt="фото корзинки для игрушек">
+          </picture>
+          <picture class="product-card__image-wrapper-inner--mobile">
+            <source media="(min-width: 320px)" srcset="img/photo-toys-mobile@1x.jpg 1x, img/photo-toys-mobile@2x.jpg 2x">
+            <img class="product-card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="фото корзинки для игрушек">
+          </picture>
+        </a>
         <div class="product-card__wrapper">
-          <h2 class="catalog-page-subtitle main-subtitle">Большая корзинка для игрушек</h2>
+          <a class="catalog-page-subtitle main-subtitle main-link-style" href="#">Большая корзинка для игрушек</a>
           <p class="product-card__description product-card__description--catalog-page main-text product-card__divider">Диаметр 30 см, высота 30 см</p>
           <p class="product-card__cost product-card__cost--catalog-page">1 500 руб.</p>
           <button class="product-card__button product-card__button--catalog-page">
