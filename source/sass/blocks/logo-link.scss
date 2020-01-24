@@ -51,13 +51,7 @@
     }
   }
 
-  .logo-link__img {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+  .logo-link__img--desktop {
+    display: block;
   }
 }

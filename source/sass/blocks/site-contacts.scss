@@ -44,7 +44,6 @@
 
 .site-contacts__map {
   width: 100%;
-  max-width: 320px;
   height: 457px;
   margin: 0 auto;
   margin-top: 38px;
@@ -52,8 +51,8 @@
   background-color: #f3e8d6;
   background-image: url("/img/icon-map-pin.svg"), url("/img/map-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 139px 146px, center center;
-  background-size: 67px 100px, auto 457px;
+  background-position: 53% 146px, center center;
+  background-size: 67px 100px, cover;
 }
 
 .site-contacts__button {
@@ -130,6 +129,7 @@
       height: 81px;
 
       background-image: url("/img/icon-flag.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -147,7 +147,6 @@
   }
 
   .site-contacts__map {
-    max-width: 768px;
     margin-top: 56px;
 
     background-image: url("/img/icon-map-pin.svg"), url("/img/map-tablet@1x.jpg");

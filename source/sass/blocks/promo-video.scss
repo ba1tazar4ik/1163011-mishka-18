@@ -1,5 +1,8 @@
 .promo-video {
-  margin: 30px;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   margin-bottom: 58px;
   padding-bottom: 33px;
 
@@ -101,10 +104,9 @@
     display: flex;
     flex-direction: column;
     margin-top: 53px;
-    margin-right: 50px;
     margin-bottom: 63px;
-    margin-left: 50px;
     padding-bottom: 45px;
+    max-width: 668px;
   }
 
   .promo-video__title {
@@ -155,7 +157,7 @@
     position: relative;
 
     flex-direction: row;
-    width: 1048px;
+    max-width: 1048px;
     margin: 0 auto;
     margin-top: 57px;
     margin-bottom: 105px;
