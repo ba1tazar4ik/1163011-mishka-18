@@ -5,30 +5,30 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-}
 
-.main-title--main-page {
-  padding-top: 70px;
-  padding-right: 20px;
-  padding-bottom: 123px;
-  padding-left: 20px;
+  &--main-page {
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-bottom: 123px;
+    padding-left: 20px;
 
-  background-color: #f8f8f8;
-  background-image: url("/img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center -18px;
-}
+    background-color: #f8f8f8;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+  }
 
-.main-title--regular-page {
-  padding-top: 70px;
-  padding-bottom: 75px;
+  &--regular-page {
+    padding-top: 70px;
+    padding-bottom: 75px;
 
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
+  }
 }
 
 @media (min-resolution: 1.5dppx) {
   .main-title--main-page {
-    background-image: url("/img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
     background-size: 575px auto;
   }
 }
@@ -53,7 +53,7 @@
       padding-top: 151px;
       padding-bottom: 374px;
 
-      background-image: url("/img/hero-tablet@1x.jpg");
+      background-image: url("../img/hero-tablet@1x.jpg");
       background-position: center top;
       background-size: auto;
     }
@@ -74,7 +74,7 @@
         width: 100%;
         height: 25px;
 
-        background-image: url("/img/bg-zigzag-fill.svg");
+        background-image: url("../img/bg-zigzag-fill.svg");
         background-repeat: repeat-x;
         background-size: contain;
       }
@@ -82,8 +82,8 @@
   }
 
   @media (min-resolution: 1.5dppx) {
-    .main-title--main-page{
-      background-image: url("/img/hero-tablet@2x.jpg");
+    .main-title--main-page {
+      background-image: url("../img/hero-tablet@2x.jpg");
       background-size: 1150px auto;
     }
   }
@@ -98,7 +98,7 @@
       padding-top: 154px;
       padding-bottom: 359px;
 
-      background-image: url("/img/hero-desktop@1x.jpg");
+      background-image: url("../img/hero-desktop@1x.jpg");
     }
 
     &--regular-page {
@@ -107,8 +107,8 @@
   }
 
   @media (min-resolution: 1.5dppx) {
-    .main-title--main-page{
-      background-image: url("/img/hero-desktop@2x.jpg");
+    .main-title--main-page {
+      background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
 }

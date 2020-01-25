@@ -11,11 +11,12 @@
 @media (min-width: 768px) {
   .site-catalog {
     padding-top: 27px;
+  }
 
-    &__item {
-      flex-direction: row;
-      margin-top: 53px;
-    }
+  .site-catalog__item {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 53px;
   }
 }
 
@@ -25,13 +26,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+  }
 
-    &__item {
-      flex-direction: column;
-      width: 316px;
-      margin-top: 108px;
-      padding-right: 25px;
-      padding-left: 25px;
-    }
+  .site-catalog__item {
+    flex-direction: column;
+    width: 316px;
+    margin-top: 108px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
