@@ -38,7 +38,7 @@ gulp.task("images", function () {
 });
 
 
-gulp.task("css", function () {
+gulp.task("min_css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -53,6 +53,17 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("css", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -62,7 +73,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("min_css"));
   gulp.watch("source/fonts/**/*.{woff,woff2}", gulp.series("fonts"));
   gulp.watch("build/fonts/*.woff,woff2").on("change", server.reload);
   gulp.watch("source/js/**/*.js", gulp.series("js"));
@@ -73,5 +84,5 @@ gulp.task("server", function () {
   gulp.watch("build/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("html", "images", "js", "fonts", "css"));
+gulp.task("build", gulp.series("html", "images", "js", "fonts", "min_css", "css"));
 gulp.task("start", gulp.series("build", "server"));
